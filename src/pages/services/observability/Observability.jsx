@@ -29,14 +29,14 @@ const Observability = () => {
       </div>
 
       {/* Three Cards Section */}
-      <section className="bg-[#1A284E] py-16 lg:py-24">
+      <section className="bg-orange-50 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-700 mb-4">
               Capilarity NextGen Observability: From Metrics to Business Impact
             </h2>
-            <p className="text-lg lg:text-xl text-white max-w-4xl mx-auto">
+            <p className="text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto">
               Insights, case studies, and thought leadership to accelerate your cloud journey
             </p>
           </div>
