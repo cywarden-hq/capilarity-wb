@@ -16,6 +16,27 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isServicesOpen) {
+                // Check if the click is outside the dropdown
+                const dropdown = document.querySelector('[data-dropdown="services"]');
+                if (dropdown && !dropdown.contains(event.target)) {
+                    setIsServicesOpen(false);
+                }
+            }
+        };
+
+        if (isServicesOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isServicesOpen]);
+
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between lg:px-[94px] py-[27px] transition-all duration-1000 ease-in-out ${
             isScrolled 
@@ -42,6 +63,9 @@ export default function Navbar() {
                             hasDropdown: true,
                             dropdownItems: [
                                 { label: "Observability", link: "/services/observability" },
+                                { label: "AI Development", link: "/services/ai-development" },
+                                { label: "Managed DevOps", link: "/services/managed-devops" },
+                                { label: "DevSecOps", link: "/services/devsecops" },
                             ]
                         },
                         { label: "Partners", link: "/partners" },
@@ -51,9 +75,10 @@ export default function Navbar() {
                         <div key={index} className="relative">
                             {item.hasDropdown ? (
                                 <div
+                                    data-dropdown="services"
                                     onClick={() => setIsServicesOpen(!isServicesOpen)}
                                 >
-                                    <button className="relative text-gray-800 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200 hover:bg-gray-100 focus:outline-none">
+                                    <button className="relative text-gray-800 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200 hover:bg-gray-100 hover:text-orange-500 focus:outline-none">
                                         <div className="flex items-center gap-1">
                                             {item.label}
                                             <svg
@@ -70,12 +95,12 @@ export default function Navbar() {
                                     
                                     {/* Dropdown Menu */}
                                     {isServicesOpen && (
-                                        <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                                        <div className="absolute top-13 left-0 mt-2 w-64 bg-white rounded-4xl shadow-lg border border-gray-200 py-2 z-50">
                                             {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
                                                 <Link
                                                     key={dropdownIndex}
                                                     to={dropdownItem.link}
-                                                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+                                                    className="block px-4 py-3 text-sm text-gray-700 hover:text-orange-500 transition-colors duration-200"
                                                     onClick={() => setIsServicesOpen(false)}
                                                 >   
                                                     {dropdownItem.label}
@@ -87,7 +112,7 @@ export default function Navbar() {
                             ) : (
                                 <Link
                                     to={item.link}
-                                    className="relative text-gray-800 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200 hover:bg-gray-100 focus:outline-none block"
+                                    className="relative text-gray-800 text-sm font-medium px-4 py-2 rounded-full transition-all duration-200 hover:bg-gray-100 hover:text-orange-500 focus:outline-none block"
                                 >
                                     {item.label}
                                 </Link>

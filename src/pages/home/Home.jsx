@@ -7,7 +7,7 @@ import ContactUs from "../../components/ContactUs";
 import AboutUs from "./features/AboutUs";
 import { Link } from "react-router-dom";
 
-export default function Index() {
+export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#000314] relative overflow-hidden pt-[114px]">

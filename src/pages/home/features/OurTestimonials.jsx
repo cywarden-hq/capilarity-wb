@@ -101,14 +101,14 @@ export const OurTestimonials = () => {
                   icon={features[0].icon}
                   title={features[0].title}
                   description={formatDescription(features[0].description)}
-                  className="hover:animate-pulse"
+                  className=""
                 />
                 <div className="mt-5">
                   <FeatureCard
                     icon={features[1].icon}
                     title={features[1].title}
                     description={formatDescription(features[1].description)}
-                    className="mt-4 hover:animate-pulse"
+                    className="mt-4 "
                   />
                 </div>
               </div>
@@ -121,14 +121,14 @@ export const OurTestimonials = () => {
                   icon={features[2].icon}
                   title={features[2].title}
                   description={formatDescription(features[2].description)}
-                  className="hover:animate-pulse"
+                  className=""
                 />
                 <div className="mt-5">
                   <FeatureCard
                     icon={features[3].icon}
                     title={features[3].title}
                     description={formatDescription(features[3].description)}
-                    className="hover:animate-pulse"
+                    className=""
                   />
                 </div>
                 <div className="mt-5">
@@ -136,7 +136,7 @@ export const OurTestimonials = () => {
                     icon={features[4].icon}
                     title={features[4].title}
                     description={formatDescription(features[4].description)}
-                    className="hover:animate-pulse"
+                    className=""
                   />
                 </div>
               </div>
@@ -149,14 +149,14 @@ export const OurTestimonials = () => {
                   icon={features[5].icon}
                   title={features[5].title}
                   description={formatDescription(features[5].description)}
-                  className="mt-5 hover:animate-pulse"
+                  className="mt-5 "
                 />
                 <div className="mt-5">
                   <FeatureCard
                     icon={features[6].icon}
                     title={features[6].title}
                     description={formatDescription(features[6].description)}
-                    className="hover:animate-pulse"
+                    className=""
                   />
                 </div>
               </div>

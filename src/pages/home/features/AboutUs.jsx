@@ -1,5 +1,6 @@
 import React from "react";
 import Orb from './Orb';
+import CountUp from '../../../components/CountUp';
 
 export default function AboutUs() {
   return (
@@ -22,7 +23,7 @@ export default function AboutUs() {
               {/* 95% Card */}
               <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
-                  95%
+                  <CountUp end={95} suffix="%" duration={2000} />
                 </div>
                 <div className="text-gray-500 text-base leading-relaxed">
                   <div>Faster</div>
@@ -33,7 +34,7 @@ export default function AboutUs() {
               {/* 40% Card */}
               <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
-                  40%
+                  <CountUp end={40} suffix="%" duration={2000} />
                 </div>
                 <div className="text-gray-500 text-base leading-relaxed">
                   Cost Reduction
@@ -46,7 +47,7 @@ export default function AboutUs() {
               {/* 500+ Card */}
               <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
-                  500+
+                  <CountUp end={500} suffix="+" duration={2000} />
                 </div>
                 <div className="text-gray-500 text-base leading-relaxed">
                   <div>Successful cloud</div>

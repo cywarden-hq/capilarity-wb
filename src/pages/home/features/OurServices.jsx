@@ -82,10 +82,9 @@ const OurServices = () => {
                     </p>
                 </div>
 
-                {/* Services Grid - Uneven Layout */}
+                {/* Services Grid */}
                 <div className="relative max-w-[1302px] mx-auto">
-                    {/* First Row - Left Aligned */}
-                    <div className="flex flex-col lg:flex-row gap-8 mb-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                         {/* Observability Card */}
                         <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                             <div className="flex items-center justify-center bg-orange-50 w-16 h-16 rounded-xl mb-6 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
@@ -121,10 +120,8 @@ const OurServices = () => {
                                 <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More →</span>
                             </button>
                         </div>
-                    </div>
 
-                    {/* Second Row - Right Aligned */}
-                    <div className="flex flex-col lg:flex-row gap-8 justify-end">
+
                         {/* Managed DevOps Card */}
                         <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                             <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
