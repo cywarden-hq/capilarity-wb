@@ -16,7 +16,7 @@ const Observability = () => {
           </h1>
         </div>
 
-        {/* <div className="z-20" style={{ width: '100%', height: '600px', position: 'relative' }}>
+        {/* <div className="z-20" style={{ width: '100%', height: '100vh', position: 'relative' }}>
           <Prism
             animationType="rotate"
             timeScale={0.5}
@@ -25,7 +25,7 @@ const Observability = () => {
             scale={3.6}
             hueShift={0}
             colorFrequency={1}
-            noise={0.5}
+            noise={0}
             glow={1}
           />
         </div> */}

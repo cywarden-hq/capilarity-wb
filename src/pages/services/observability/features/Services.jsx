@@ -7,7 +7,7 @@ export default function Services() {
                 <div className="flex flex-col gap-20">
 
                     <div className="flex gap-20 items-center">
-                        <img src="/images/observability/service1.svg" alt="Service 1" />
+                        <img className="hover:scale-101 hover:translate-x-1 transition-all duration-300" src="/images/observability/service1.svg" alt="Service 1" />
                         <div className="flex flex-col gap-10 pr-20">
                             <h1 className="text-5xl font-bold text-[#1F2937]">Application Performance Monitoring APM</h1>
                             <div className="flex flex-col gap-5 text-[#64748B]">
@@ -28,11 +28,11 @@ export default function Services() {
                                 <span className="text-lg font-normal leading-relaxed">We provide you real time insights for your website and help you track website’s performance and user experience with key metrics like response time, page load, and throughput.</span>
                             </div>
                         </div>
-                        <img src="/images/observability/service2.svg" alt="Service 2" />
+                        <img className="hover:scale-101 hover:-translate-x-1 transition-all duration-300" src="/images/observability/service2.svg" alt="Service 2" />
                     </div>
 
                     <div className="flex gap-20 items-center">
-                        <img src="/images/observability/service3.svg" alt="Service 3" />
+                        <img className="hover:scale-101 hover:translate-x-1 transition-all duration-300" src="/images/observability/service3.svg" alt="Service 3" />
                         <div className="flex flex-col gap-10 pr-20">
                             <h1 className="text-5xl font-bold text-[#1F2937]">Infrastructure Monitoring</h1>
                             <div className="flex flex-col gap-5 text-[#64748B]">
