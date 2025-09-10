@@ -35,7 +35,7 @@ export default function GetInTouch() {
   };
 
   return (
-    <div className="min-h-screen bg-orange-50">
+    <div className="min-h-screen bg-[#1d3557]">
       {/* Main Content */}
       <div className="px-6 lg:px-[66px] py-30 lg:py-[166px]">
         <div className="max-w-[1360px] mx-auto">
