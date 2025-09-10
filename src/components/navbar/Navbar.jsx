@@ -43,7 +43,7 @@ export default function Navbar() {
     return (
         <>
             <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 lg:px-[74px] transition-all duration-1000 ease-in-out ${isScrolled
-                    ? 'bg-black shadow-lg backdrop-blur-sm py-[5px]'
+                    ? 'bg-black shadow-lg backdrop-blur-sm py-[2px]'
                     : 'bg-transparent py-[27px]'
                 }`}>
                 {/* Logo */}
@@ -58,8 +58,7 @@ export default function Navbar() {
                 </Link>
                 {/* Navigation Menu */}
                 <div className="hidden lg:flex">
-                    <div className={`flex gap-8 lg:gap-[13px] ${isScrolled ? '' : 'bg-gray-900/10 backdrop-blur-md px-[20px] py-[12px] shadow-lg'
-                        }`}>
+                    <div className="flex gap-8 lg:gap-[13px] bg-gray-900/10 shadow-xl backdrop-blur-sm rounded-2xl px-[20px] py-[12px]">
                         {menuItems.map((item, index) => (
                             <div key={index} className="relative">
                                 {item.hasDropdown ? (
@@ -67,7 +66,7 @@ export default function Navbar() {
                                         data-dropdown={item.label.toLowerCase()}
                                         onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                                     >
-                                        <button className="relative text-white text-md font-regular px-4 py-2 rounded-full transition-all duration-200 hover:bg-white/20 hover:text-orange-300 focus:outline-none">
+                                        <button className="relative text-white text-md font-medium px-4 py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none group">
                                             <div className="flex items-center gap-1">
                                                 {item.label}
                                                 <svg
@@ -80,6 +79,8 @@ export default function Navbar() {
                                                     <path d="M19 9l-7 7-7-7" />
                                                 </svg>
                                             </div>
+                                            {/* Animated underline */}
+                                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-orange-500 transition-all duration-300 ease-out group-hover:w-[70%]"></div>
                                         </button>
 
                                         {/* Dropdown Menu */}
@@ -89,7 +90,7 @@ export default function Navbar() {
                                                     <Link
                                                         key={dropdownIndex}
                                                         to={dropdownItem.link}
-                                                        className="block px-4 py-3 text-sm text-white hover:text-orange-300 transition-colors duration-200"
+                                                        className="block px-4 py-3 text-sm text-white hover:text-orange-500 transition-colors duration-200"
                                                         onClick={() => setOpenDropdown(null)}
                                                     >
                                                         {dropdownItem.label}
@@ -101,9 +102,11 @@ export default function Navbar() {
                                 ) : (
                                     <Link
                                         to={item.link}
-                                        className="relative text-white text-md font-regular px-4 py-2 rounded-full transition-all duration-200 hover:bg-white/20 hover:text-orange-300 focus:outline-none block"
+                                        className="relative text-white text-md font-medium px-4 py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none block group"
                                     >
                                         {item.label}
+                                        {/* Animated underline */}
+                                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-orange-500 transition-all duration-300 ease-out group-hover:w-[70%]"></div>
                                     </Link>
                                 )}
                             </div>
@@ -113,7 +116,7 @@ export default function Navbar() {
                 <div className="flex">
                     <Link
                         to="/get-in-touch"
-                        className="hidden lg:flex group items-center justify-center px-4 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
+                        className="hidden lg:flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
                         <span className="hidden lg:block text-white text-base font-bold leading-[150%] transition-colors duration-300">
                             Get Started
                         </span>

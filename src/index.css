@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @keyframes scale-pop {
+
     0%,
     100% {
         transform: scale(1);
@@ -12,10 +13,31 @@
     }
 }
 
+@keyframes float-y {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* moves upward */
+    }
+}
+
 .animate-scale-pop {
     animation: scale-pop 2s ease-in-out infinite;
 }
 
 .hover\:animate-scale-pop:hover {
     animation: scale-pop 2s ease-in-out infinite;
+}
+
+.animate-float-y {
+    animation: float-y 2s ease-in-out infinite;
+}
+
+.hover\:animate-float-y:hover {
+    animation: float-y 2s ease-in-out infinite;
 }
