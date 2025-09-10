@@ -4,10 +4,10 @@ import CountUp from '../../../components/CountUp';
 
 export default function AboutUs() {
   return (
-    <div className="z-20 min-h-screen bg-gray-900 py-26 px-4 lg:px-8 z-20">
+    <div className="z-20 min-h-screen bg-gray-900 py-16 px-4 lg:px-8 z-20">
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
-        <div className="text-center mb-16 lg:mb-28">
+        <div className="text-center mb-10 lg:mb-15">
           <h1 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-white leading-tight max-w-4xl mx-auto">
             We are cloud-native builders, <br />engineers, & problem-solvers
           </h1>
@@ -20,7 +20,7 @@ export default function AboutUs() {
             {/* Left Column */}
             <div className="flex flex-col gap-8 lg:gap-16">
               {/* 95% Card */}
-              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
+              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:animate-float-y duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
                   <CountUp end={95} suffix="%" duration={2000} />
                 </div>
@@ -31,7 +31,7 @@ export default function AboutUs() {
               </div>
 
               {/* 40% Card */}
-              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
+              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:animate-float-y duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
                   <CountUp end={32} suffix="%" duration={2000} />
                 </div>
@@ -44,7 +44,7 @@ export default function AboutUs() {
             {/* Right Column */}
             <div className="flex flex-col gap-8 lg:gap-16">
               {/* 500+ Card */}
-              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
+              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:animate-float-y duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
                   <CountUp end={12} suffix="+" duration={2000} />
                 </div>
@@ -55,7 +55,7 @@ export default function AboutUs() {
               </div>
 
               {/* 24/7 Card */}
-              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
+              <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:animate-float-y duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
                   24/7
                 </div>

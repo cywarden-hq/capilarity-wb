@@ -33,14 +33,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
               <Link
                 to="/get-in-touch"
-                className="group flex items-center justify-center px-6 py-[14px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
-                <span className="text-white font-inter text-base font-bold leading-[150%] transition-colors duration-300">
+                className="flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
+                <span className="text-white text-base font-bold leading-[150%] transition-colors duration-300">
                   Get Started
                 </span>
               </Link>
 
-              <button className="group flex items-center justify-center px-[31px] py-[13px] border-2 border-orange-500 bg-transparent rounded-full shadow-sm backdrop-blur-sm hover:bg-white/10 hover:scale-105 transition-all duration-300 ease-out">
-                <span className="text-white font-inter text-[15px] font-medium leading-[150%] transition-colors duration-300">
+              <button className="group flex items-center justify-center px-8 py-[8px] border-2 border-orange-500 bg-transparent rounded-full hover:border-orange-400 hover:scale-105 transition-all duration-300 ease-out">
+                <span className="text-white font-inter text-[15px] font-medium leading-[150%] group-hover:text-orange-400 transition-colors duration-300">
                   See Our Work
                 </span>
               </button>
@@ -55,7 +55,7 @@ export default function Home() {
             src="/images/home/HeroVectorTop.svg"
             alt="Hero Vector Bottom"
             className="absolute top-0 left-0"
-            style={{width: '100%'}}
+            style={{ width: '100%' }}
           />
         </div>
 
@@ -65,11 +65,11 @@ export default function Home() {
             src="/images/home/HeroBgEffect.svg"
             alt="Hero Bg Effect"
             className="absolute top-0 left-0"
-            style={{width: '100%'}}
+            style={{ width: '100%' }}
           />
         </div>
 
-        {/* Hero Vector Bottom */}  
+        {/* Hero Vector Bottom */}
         <div className="absolute bottom-0 left-[34.33px] right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorBottom-1.svg"
@@ -92,15 +92,17 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-          <div className="w-[37px] h-[55px] flex items-center justify-center">
-            <svg width="38" height="55" viewBox="0 0 38 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.9053 0C29.0327 0 37.2391 8.46139 37.2393 18.9043V36.042C37.2392 46.485 29.0327 55 18.9053 55C8.77798 54.9998 0.572328 46.4849 0.572266 36.042V18.9043C0.572412 8.4615 8.77803 0.000180615 18.9053 0ZM18.9053 4.55176C11.219 4.55194 4.98647 10.9785 4.98633 18.9043V36.042C4.98639 43.9678 11.219 50.3944 18.9053 50.3945C26.5917 50.3945 32.8242 43.9679 32.8242 36.042V18.9043C32.8241 10.9784 26.5917 4.55176 18.9053 4.55176ZM18.9053 10.6943C20.6107 10.6943 21.9609 11.8854 21.9609 13.3896V20.2217C21.9608 21.7259 20.6106 22.917 18.9053 22.917C17.2711 22.9168 15.8497 21.7258 15.8496 20.2217V13.3896C15.8496 11.9481 17.2 10.6945 18.9053 10.6943Z" fill="white" />
-            </svg>
+        <button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+          <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <div className="w-[37px] h-[55px] flex items-center justify-center">
+              <svg width="38" height="55" viewBox="0 0 38 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.9053 0C29.0327 0 37.2391 8.46139 37.2393 18.9043V36.042C37.2392 46.485 29.0327 55 18.9053 55C8.77798 54.9998 0.572328 46.4849 0.572266 36.042V18.9043C0.572412 8.4615 8.77803 0.000180615 18.9053 0ZM18.9053 4.55176C11.219 4.55194 4.98647 10.9785 4.98633 18.9043V36.042C4.98639 43.9678 11.219 50.3944 18.9053 50.3945C26.5917 50.3945 32.8242 43.9679 32.8242 36.042V18.9043C32.8241 10.9784 26.5917 4.55176 18.9053 4.55176ZM18.9053 10.6943C20.6107 10.6943 21.9609 11.8854 21.9609 13.3896V20.2217C21.9608 21.7259 20.6106 22.917 18.9053 22.917C17.2711 22.9168 15.8497 21.7258 15.8496 20.2217V13.3896C15.8496 11.9481 17.2 10.6945 18.9053 10.6943Z" fill="white" />
+              </svg>
+            </div>
           </div>
-        </div>
+        </button>
       </div>
-      
+
       <OurPartners />
 
       {/* Our Services Section */}
@@ -195,9 +197,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Statistics Section */}
-      
 
       {/* Resources Section */}
       <Resources />
