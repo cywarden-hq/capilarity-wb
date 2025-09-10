@@ -1,11 +1,14 @@
 import React from 'react';
 import Prism from './Prism';
+import Services from './features/Services';
+import Analytics from './features/Analytics';
+import FeaturedContent from './features/FeaturedContent';
 
 const Observability = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen bg-black relative overflow-hidden pt-[114px] z-10">
+      <div className="min-h-screen bg-black relative overflow-hidden z-10">
         {/* Background Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
           <h1 className="text-[50px] lg:text-[100px] xl:text-[200px] text-white select-none leading-none">
@@ -13,7 +16,7 @@ const Observability = () => {
           </h1>
         </div>
 
-        <div className="z-20" style={{ width: '100%', height: '600px', position: 'relative' }}>
+        {/* <div className="z-20" style={{ width: '100%', height: '600px', position: 'relative' }}>
           <Prism
             animationType="rotate"
             timeScale={0.5}
@@ -25,7 +28,7 @@ const Observability = () => {
             noise={0.5}
             glow={1}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Three Cards Section */}
@@ -120,6 +123,9 @@ const Observability = () => {
           </div>
         </div>
       </section>
+      <Services />
+      <Analytics />
+      <FeaturedContent />
     </>
   );
 };

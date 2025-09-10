@@ -1,21 +1,30 @@
-import React from 'react'
-import { Routes, Route, Outlet } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import React, { useEffect } from 'react'
+import { Routes, Route, Outlet, useLocation } from 'react-router-dom'
+import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/home/Home'
 import GetInTouch from './pages/GetInTouch'
 import Observability from './pages/services/observability/Observability'
 import NotFound from './pages/NotFound'
 
-const Layout = () => (
-  <div className="relative">
-    <Navbar />
-    <main className="relative z-10">
-      <Outlet />
-    </main>
-    <Footer />
-  </div>
-);
+const Layout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to top when location changes
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+    <div className="relative">
+      <Navbar />
+      <main className="relative z-10">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 function App() {
 

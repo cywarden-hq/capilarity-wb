@@ -5,14 +5,14 @@ import Resources from "./features/Resources";
 import OurServices from "./features/OurServices";
 import ContactUs from "../../components/ContactUs";
 import AboutUs from "./features/AboutUs";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#000314] relative overflow-hidden pt-[114px]">
         {/* Hero Content */}
-        <div className="relative z-20 px-6 lg:px-[94px] pt-8 lg:pt-[100px]">
+        <div className="relative z-20 px-6 lg:px-[94px] pt-20 lg:pt-[100px]">
           <div className="max-w-[732px]">
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-regular pb-[30px] leading-tight">
@@ -30,7 +30,7 @@ export default function Home() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-[37px] max-w-[356px]">
+            <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
               <Link
                 to="/get-in-touch"
                 className="group flex items-center justify-center px-6 py-[14px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">

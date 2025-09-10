@@ -5,7 +5,6 @@ import CountUp from '../../../components/CountUp';
 export default function AboutUs() {
   return (
     <div className="z-20 min-h-screen bg-gray-900 py-26 px-4 lg:px-8 z-20">
-
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
         <div className="text-center mb-16 lg:mb-28">
@@ -34,7 +33,7 @@ export default function AboutUs() {
               {/* 40% Card */}
               <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-40 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
-                  <CountUp end={40} suffix="%" duration={2000} />
+                  <CountUp end={32} suffix="%" duration={2000} />
                 </div>
                 <div className="text-gray-500 text-base leading-relaxed">
                   Cost Reduction
@@ -47,7 +46,7 @@ export default function AboutUs() {
               {/* 500+ Card */}
               <div className="bg-white rounded-xl shadow-lg p-8 w-64 h-45 flex flex-col justify-center hover:shadow-2xl hover:-translate-y-2 duration-300 ease-out">
                 <div className="text-5xl lg:text-6xl font-bold text-orange-500 mb-5">
-                  <CountUp end={500} suffix="+" duration={2000} />
+                  <CountUp end={12} suffix="+" duration={2000} />
                 </div>
                 <div className="text-gray-500 text-base leading-relaxed">
                   <div>Successful cloud</div>
@@ -68,11 +67,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* <img
-            src="/images/home/aboutUs.svg"
-            className="h-[400px] hover:scale-102 duration-300 ease-out"
-          /> */}
-          <div className="z-10" style={{ width: '40%', height: '500px' }}>
+          <div className="z-10 sm:w-[40%] sm:h-[400px] lg:w-[40%] lg:h-[500px]">
             <Orb
               hoverIntensity={0.6}
               rotateOnHover={true}

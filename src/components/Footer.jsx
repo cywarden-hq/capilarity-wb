@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#002857] text-white py-16 relative overflow-hidden">
       {/* Background Logo */}
-      <div className="w-full h-full z-20 inset-0">
+      <div className="hidden lg:block w-full h-full z-20 inset-0">
         <img
           src={footer_bg}
           alt=""

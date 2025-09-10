@@ -36,9 +36,8 @@ export default function GetInTouch() {
 
   return (
     <div className="min-h-screen bg-orange-50">
-
       {/* Main Content */}
-      <div className="px-6 lg:px-[66px] py-16 lg:py-[266px]">
+      <div className="px-6 lg:px-[66px] py-30 lg:py-[166px]">
         <div className="max-w-[1360px] mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Contact Form */}
@@ -200,17 +199,17 @@ export default function GetInTouch() {
             <div className="order-1 lg:order-2 space-y-8">
               {/* Header */}
               <div className="space-y-4">
-                <h1 className="text-[#0B2D4C] font-open-sans text-[41px] font-normal leading-[58px]">
+                <h1 className="text-white font-open-sans text-[41px] font-normal leading-[58px]">
                   Get in touch
                 </h1>
-                <p className="text-[#0B2D4C] font-open-sans text-[21px] font-light leading-[40px] max-w-[687px]">
+                <p className="text-gray-400 font-open-sans text-[21px] font-light leading-[40px] max-w-[687px]">
                   Capilarity is a project & business management firm working on projects in the software and app verticals. In other words, we manage your project & business requirement so you can focus on building your KICKASS PRODUCT. PERIOD
                 </p>
               </div>
 
               {/* Trusted by section */}
               <div className="space-y-6">
-                <p className="text-black/60 font-open-sans text-2xl font-normal leading-[26px] text-center">
+                <p className="text-white font-open-sans text-2xl font-normal leading-[26px] text-center">
                   Trusted by leading enterprises across finance, SaaS, healthcare, and technology.
                 </p>
 
@@ -252,7 +251,6 @@ export default function GetInTouch() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

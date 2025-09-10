@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const OurServices = () => {
     const services = [
@@ -86,77 +87,85 @@ const OurServices = () => {
                 <div className="relative max-w-[1302px] mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                         {/* Observability Card */}
-                        <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
-                            <div className="flex items-center justify-center bg-orange-50 w-16 h-16 rounded-xl mb-6 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
-                                <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
-                                    {services[0].icon}
+                        <Link to="/services/observability">
+                            <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
+                                <div className="flex items-center justify-center bg-orange-50 w-16 h-16 rounded-xl mb-6 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
+                                    <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
+                                        {services[0].icon}
+                                    </div>
                                 </div>
+                                <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                                    {services[0].title}
+                                </h3>
+                                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
+                                    {services[0].description}
+                                </p>
+                                <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out cursor-pointer">
+                                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More</span>
+                                </button>
                             </div>
-                            <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
-                                {services[0].title}
-                            </h3>
-                            <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
-                                {services[0].description}
-                            </p>
-                            <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out">
-                                <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More →</span>
-                            </button>
-                        </div>
+                        </Link>
 
                         {/* AI Development Card */}
-                        <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
-                            <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
-                                <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
-                                    {services[1].icon}
+                        <Link to="/services/ai-development">
+                            <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
+                                <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
+                                    <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
+                                        {services[1].icon}
+                                    </div>
                                 </div>
+                                <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                                    {services[1].title}
+                                </h3>
+                                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
+                                    {services[1].description}
+                                </p>
+                                <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out cursor-pointer">
+                                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More</span>
+                                </button>
                             </div>
-                            <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
-                                {services[1].title}
-                            </h3>
-                            <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
-                                {services[1].description}
-                            </p>
-                            <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out">
-                                <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More →</span>
-                            </button>
-                        </div>
+                        </Link>
 
 
                         {/* Managed DevOps Card */}
-                        <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
-                            <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
-                                <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
-                                    {services[2].icon}
+                        <Link to="/services/managed-devops">
+                            <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
+                                <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
+                                    <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
+                                        {services[2].icon}
+                                    </div>
                                 </div>
+                                <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                                    {services[2].title}
+                                </h3>
+                                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
+                                    {services[2].description}
+                                </p>
+                                <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out cursor-pointer">
+                                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More</span>
+                                </button>
                             </div>
-                            <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
-                                {services[2].title}
-                            </h3>
-                            <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
-                                {services[2].description}
-                            </p>
-                            <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out">
-                                <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More →</span>
-                            </button>
-                        </div>
+                        </Link>
 
                         {/* DevSecOps Card */}
-                        <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
-                            <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
-                                <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
-                                    {services[3].icon}
+                        <Link to="/services/devsecops">
+                            <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
+                                <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
+                                    <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">
+                                        {services[3].icon}
+                                    </div>
                                 </div>
+                                <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                                    {services[3].title}
+                                </h3>
+                                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
+                                    {services[3].description}
+                                </p>
+                                <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out cursor-pointer">
+                                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More</span>
+                                </button>
                             </div>
-                            <h3 className="text-[#1F2937] font-open-sans text-[19px] font-bold leading-7 mb-4 group-hover:text-orange-600 transition-colors duration-300">
-                                {services[3].title}
-                            </h3>
-                            <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
-                                {services[3].description}
-                            </p>
-                            <button className="group/btn text-[#FE8032] font-inter text-[13px] font-normal leading-5 text-left hover:text-orange-500 hover:translate-x-1 transition-all duration-300 ease-out">
-                                <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-300 ease-out">Learn More →</span>
-                            </button>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
