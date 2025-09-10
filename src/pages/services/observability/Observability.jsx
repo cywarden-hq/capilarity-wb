@@ -16,7 +16,7 @@ const Observability = () => {
           </h1>
         </div>
 
-        {/* <div className="z-20" style={{ width: '100%', height: '100vh', position: 'relative' }}>
+        <div className="z-20" style={{ width: '100%', height: '100vh', position: 'relative' }}>
           <Prism
             animationType="rotate"
             timeScale={0.5}
@@ -28,7 +28,7 @@ const Observability = () => {
             noise={0}
             glow={1}
           />
-        </div> */}
+        </div>
       </div>
 
       {/* Three Cards Section */}
