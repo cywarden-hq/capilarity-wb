@@ -16,7 +16,7 @@ const Observability = () => {
           </h1>
         </div>
 
-        <div className="z-20" style={{ width: '100%', height: '100vh', position: 'relative' }}>
+        {/* <div className="z-20" style={{ width: '100%', height: '100vh', position: 'relative' }}>
           <Prism
             animationType="rotate"
             timeScale={0.5}
@@ -28,11 +28,11 @@ const Observability = () => {
             noise={0}
             glow={1}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Three Cards Section */}
-      <section className="bg-orange-50 py-16 lg:py-24">
+      <section className="bg-orange-50 py-16 lg:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
@@ -45,7 +45,7 @@ const Observability = () => {
           </div>
 
           {/* Three Cards Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full h-[250px]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
             {/* Card 1: Technical Foundation */}
             <div className="group bg-white rounded-xl p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer h-[250px]">
               {/* Background Number */}
@@ -64,7 +64,7 @@ const Observability = () => {
               </div>
 
               {/* Side Reveal Content */}
-              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-full transition-transform duration-1000 ease-out group-hover:translate-x-0">
+              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-[95%] transition-transform duration-1000 ease-out group-hover:translate-x-0">
                 <p className="text-white leading-relaxed text-lg">
                   NextGen Observability gives you real-time insights powered by AIOps and ML, helping you detect issues early, understand why they happen, and resolve them quickly to keep systems performing at their best.
                 </p>
@@ -89,7 +89,7 @@ const Observability = () => {
               </div>
 
               {/* Side Reveal Content */}
-              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-full transition-transform duration-1000 ease-out group-hover:translate-x-0">
+              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-[95%] transition-transform duration-1000 ease-out group-hover:translate-x-0">
                 <p className="text-white leading-relaxed text-lg">
                   We take an agile approach to observability going beyond metrics and dashboards to explain why systems behave the way they do, while setting proactive alerts on the key performance metrics that matter most to your business.
                 </p>
@@ -114,7 +114,7 @@ const Observability = () => {
               </div>
 
               {/* Side Reveal Content */}
-              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-full transition-transform duration-1000 ease-out group-hover:translate-x-0">
+              <div className="absolute inset-0 bg-orange-500 rounded-xl p-8 flex flex-col justify-center transform translate-x-[95%] transition-transform duration-1000 ease-out group-hover:translate-x-0">
                 <p className="text-white leading-relaxed text-lg">
                   We map observability directly to business outcomes: revenue at risk, SLA breaches, churn signals. Executives don't care about CPU spikes—they care about customers, contracts, and dollars. That's the level we operate on.
                 </p>
