@@ -6,16 +6,24 @@ import OurServices from "./features/OurServices";
 import ContactUs from "../../components/ContactUs";
 import AboutUs from "./features/AboutUs";
 import { Link } from "react-router";
+import { HeroGeometric } from "@/components/ui/shadcn-io/shape-landing-hero";
 
 export default function Home() {
   return (
     <>
+      {/* <div className="min-h-screen">
+        <HeroGeometric
+          title1="From Visibility to Velocity"
+          title2="Accelerate Your Cloud Journey"
+          description="From Observability to AI-driven DevOps, we help enterprises run faster, safer, and smarter in the cloud."
+        />
+      </div> */}
       <div className="min-h-screen bg-[#000314] relative overflow-hidden pt-[114px]">
-        {/* Hero Content */}
-        <div className="relative z-20 px-6 lg:px-[94px] pt-20 lg:pt-[100px]">
+      {/* Hero Content */}
+      <div className="relative z-20 px-6 lg:px-[94px] pt-20 lg:pt-[50px]">
           <div className="max-w-[732px]">
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-regular pb-[30px] leading-tight">
+      {/* Main Heading */}
+      <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-regular pb-[30px] leading-tight">
               <span className="text-white">From </span>
               <span className="text-white">Visibility </span>
               <span className="text-white">to </span>
@@ -24,13 +32,13 @@ export default function Home() {
               <span className="text-white">Cloud Journey.</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="font-open-sans text-lg sm:text-xl lg:text-2xl font-regular leading-[150%] text-white max-w-[646px] mb-8 lg:mb-12">
+      {/* Subtitle */}
+      <p className="font-open-sans text-lg sm:text-xl lg:text-2xl font-regular leading-[150%] text-white max-w-[646px] mb-8 lg:mb-12">
               From Observability to AI-driven DevOps, we help enterprises run faster, safer, and smarter in the cloud.
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
+      {/* Action Buttons */}
+      <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
               <Link
                 to="/get-in-touch"
                 className="flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
@@ -49,8 +57,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Hero Vector Top */}
-        <div className="absolute top-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
+      {/* Hero Vector Top */}
+      <div className="absolute top-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorTop.svg"
             alt="Hero Vector Bottom"
@@ -59,8 +67,8 @@ export default function Home() {
           />
         </div>
 
-        {/* Hero Vector Top 2 */}
-        <div className="absolute top-[40%] left-0 right-0 z-10 w-full h-full overflow-hidden">
+      {/* Hero Vector Top 2 */}
+      <div className="absolute top-[40%] left-0 right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroBgEffect.svg"
             alt="Hero Bg Effect"
@@ -69,8 +77,8 @@ export default function Home() {
           />
         </div>
 
-        {/* Hero Vector Bottom */}
-        <div className="absolute bottom-0 left-[34.33px] right-0 z-10 w-full h-full overflow-hidden">
+      {/* Hero Vector Bottom */}
+      <div className="absolute bottom-0 left-[34.33px] right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorBottom-1.svg"
             alt="Hero Vector Bottom"
@@ -78,7 +86,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorBottom-2.svg"
             alt="Hero Vector Bottom 2"
@@ -91,9 +99,9 @@ export default function Home() {
           />
         </div>
 
-        {/* Scroll Indicator */}
-        <button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-          <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+      {/* Scroll Indicator */}
+      <button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+          <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 z-20 animate-bounce cursor-pointer">
             <div className="w-[37px] h-[55px] flex items-center justify-center">
               <svg width="38" height="55" viewBox="0 0 38 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.9053 0C29.0327 0 37.2391 8.46139 37.2393 18.9043V36.042C37.2392 46.485 29.0327 55 18.9053 55C8.77798 54.9998 0.572328 46.4849 0.572266 36.042V18.9043C0.572412 8.4615 8.77803 0.000180615 18.9053 0ZM18.9053 4.55176C11.219 4.55194 4.98647 10.9785 4.98633 18.9043V36.042C4.98639 43.9678 11.219 50.3944 18.9053 50.3945C26.5917 50.3945 32.8242 43.9679 32.8242 36.042V18.9043C32.8241 10.9784 26.5917 4.55176 18.9053 4.55176ZM18.9053 10.6943C20.6107 10.6943 21.9609 11.8854 21.9609 13.3896V20.2217C21.9608 21.7259 20.6106 22.917 18.9053 22.917C17.2711 22.9168 15.8497 21.7258 15.8496 20.2217V13.3896C15.8496 11.9481 17.2 10.6945 18.9053 10.6943Z" fill="white" />

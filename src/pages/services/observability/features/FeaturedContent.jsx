@@ -21,9 +21,9 @@ export default function FeaturedContent() {
                 alt="Featured Top Right"
             />
 
-            <div className="flex flex-col gap-10 lg:gap-25 py-20 relative z-50">
+            <div className="flex flex-col gap-10 lg:gap-10 py-20 relative z-50">
                 <h1 className="text-5xl font-bold text-[#002857] text-center pt-10 lg:pt-0">Featured Content</h1>
-                <div className="flex-col lg:flex-row flex gap-15 justify-center items-center">
+                <div className="flex-col lg:flex-row flex gap-8 justify-center items-center">
 
                     <div className="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-[400px] w-[300px] rounded-2xl hover:duration-700 duration-700">
                         <div className="w-full h-full bg-[#FF6666] text-gray-800">

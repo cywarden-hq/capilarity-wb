@@ -44,7 +44,7 @@ export default function Navbar() {
         <>
             <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 lg:px-[74px] transition-all duration-1000 ease-in-out ${isScrolled
                     ? 'bg-black shadow-lg backdrop-blur-sm py-[2px]'
-                    : 'bg-transparent py-[27px]'
+                    : 'bg-transparent py-[15px]'
                 }`}>
                 {/* Logo */}
                 <Link to="/">
