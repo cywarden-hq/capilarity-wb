@@ -238,7 +238,17 @@ export function HeroGeometric({
                   </span>
                 </Link>
 
-                <button className="group flex items-center justify-center px-8 py-3 border-2 border-orange-500 bg-transparent rounded-full hover:border-orange-400 hover:scale-105 transition-all duration-300 ease-out">
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('our-services');
+                    if (element) {
+                      element.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }
+                  }}
+                  className="group flex items-center justify-center px-8 py-[8px] border-2 border-orange-500 bg-transparent rounded-full hover:border-orange-400 hover:scale-105 transition-all duration-300 ease-out">
                   <span className="text-white font-inter text-base font-medium leading-[150%] group-hover:text-orange-400 transition-colors duration-300">
                     See Our Work
                   </span>

@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "../../../components/Reveal";
 
 // FeatureCard Component (merged from FeatureCard.tsx)
 const FeatureCard = ({ icon, title, description, className = "" }) => {
@@ -89,77 +90,86 @@ export const OurTestimonials = () => {
       </div>
       <div className="flex z-10 flex-col -mt-3 max-w-full w-[952px]">
         <header className="self-center ml-4 text-6xl font-extrabold tracking-tighter text-black max-md:max-w-full max-md:text-4xl hover:text-orange-600 transition-colors duration-300 ease-out cursor-default">
-          <span style={{ fontWeight: 400, color: 'rgba(44,44,44,1)' }} className="hover:text-orange-600 transition-colors duration-300 ease-out">Testimonials</span>
+          <Reveal animation="slideUp" duration="normal" delay={400}>
+            <span className="font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-300 ease-out">Testimonials</span>
+          </Reveal>
         </header>
+
 
         <div className="mt-24 max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             {/* First Column */}
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="max-md:mt-7">
-                <FeatureCard
-                  icon={features[0].icon}
-                  title={features[0].title}
-                  description={formatDescription(features[0].description)}
-                  className="hover:animate-scale-pop"
-                />
-                <div className="mt-5">
+              <Reveal animation="slideRight" duration="normal" delay={800}>
+                <div className="max-md:mt-7">
                   <FeatureCard
-                    icon={features[1].icon}
-                    title={features[1].title}
-                    description={formatDescription(features[1].description)}
-                    className="mt-4 hover:animate-scale-pop"
+                    icon={features[0].icon}
+                    title={features[0].title}
+                    description={formatDescription(features[0].description)}
+                    className="hover:animate-scale-pop"
                   />
+                  <div className="mt-5">
+                    <FeatureCard
+                      icon={features[1].icon}
+                      title={features[1].title}
+                      description={formatDescription(features[1].description)}
+                      className="mt-4 hover:animate-scale-pop"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
 
             {/* Second Column */}
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="max-md:mt-7">
-                <FeatureCard
-                  icon={features[2].icon}
-                  title={features[2].title}
-                  description={formatDescription(features[2].description)}
-                  className="hover:animate-scale-pop"
-                />
-                <div className="mt-5">
+              <Reveal animation="slideUp" duration="normal" delay={1000}>
+                <div className="max-md:mt-7">
                   <FeatureCard
-                    icon={features[3].icon}
-                    title={features[3].title}
-                    description={formatDescription(features[3].description)}
+                    icon={features[2].icon}
+                    title={features[2].title}
+                    description={formatDescription(features[2].description)}
                     className="hover:animate-scale-pop"
                   />
+                  <div className="mt-5">
+                    <FeatureCard
+                      icon={features[3].icon}
+                      title={features[3].title}
+                      description={formatDescription(features[3].description)}
+                      className="hover:animate-scale-pop"
+                    />
+                  </div>
+                  <div className="mt-5">
+                    <FeatureCard
+                      icon={features[4].icon}
+                      title={features[4].title}
+                      description={formatDescription(features[4].description)}
+                      className="hover:animate-scale-pop"
+                    />
+                  </div>
                 </div>
-                <div className="mt-5">
-                  <FeatureCard
-                    icon={features[4].icon}
-                    title={features[4].title}
-                    description={formatDescription(features[4].description)}
-                    className="hover:animate-scale-pop"
-                  />
-                </div>
-              </div>
+              </Reveal>
             </div>
 
             {/* Third Column */}
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <div className="grow mt-60 max-md:mt-10">
-                <FeatureCard
-                  icon={features[5].icon}
-                  title={features[5].title}
-                  description={formatDescription(features[5].description)}
-                  className="mt-5 hover:animate-scale-pop"
-                />
-                <div className="mt-5">
+              <Reveal animation="slideLeft" duration="normal" delay={1200}>
+                <div className="grow mt-60 max-md:mt-10">
                   <FeatureCard
-                    icon={features[6].icon}
-                    title={features[6].title}
-                    description={formatDescription(features[6].description)}
-                    className="hover:animate-scale-pop"
+                    icon={features[5].icon}
+                    title={features[5].title}
+                    description={formatDescription(features[5].description)}
+                    className="mt-5 hover:animate-scale-pop"
                   />
+                  <div className="mt-5">
+                    <FeatureCard
+                      icon={features[6].icon}
+                      title={features[6].title}
+                      description={formatDescription(features[6].description)}
+                      className="hover:animate-scale-pop"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
