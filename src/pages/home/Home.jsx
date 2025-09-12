@@ -11,34 +11,34 @@ import { HeroGeometric } from "@/components/ui/shadcn-io/shape-landing-hero";
 export default function Home() {
   return (
     <>
-      {/* <div className="min-h-screen">
+      <div className="min-h-screen">
         <HeroGeometric
           title1="From Visibility to Velocity"
           title2="Accelerate Your Cloud Journey"
           description="From Observability to AI-driven DevOps, we help enterprises run faster, safer, and smarter in the cloud."
         />
-      </div> */}
-      <div className="min-h-screen bg-[#000314] relative overflow-hidden pt-[114px]">
+      </div>
+      {/* <div className="min-h-screen bg-[#000314] relative overflow-hidden pt-[114px]"> */}
       {/* Hero Content */}
-      <div className="relative z-20 px-6 lg:px-[94px] pt-20 lg:pt-[50px]">
-          <div className="max-w-[732px]">
+      {/* <div className="relative z-20 px-6 lg:px-[94px] pt-20 lg:pt-[50px]">
+          <div className="max-w-[732px]"> */}
       {/* Main Heading */}
-      <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-regular pb-[30px] leading-tight">
+      {/* <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-regular pb-[30px] leading-tight">
               <span className="text-white">From </span>
               <span className="text-white">Visibility </span>
               <span className="text-white">to </span>
               <span className="font-semibold text-orange-500">Velocity </span>
               <span className="text-white">Accelerate Your</span><br />
               <span className="text-white">Cloud Journey.</span>
-            </h1>
+            </h1> */}
 
       {/* Subtitle */}
-      <p className="font-open-sans text-lg sm:text-xl lg:text-2xl font-regular leading-[150%] text-white max-w-[646px] mb-8 lg:mb-12">
+      {/* <p className="font-open-sans text-lg sm:text-xl lg:text-2xl font-regular leading-[150%] text-white max-w-[646px] mb-8 lg:mb-12">
               From Observability to AI-driven DevOps, we help enterprises run faster, safer, and smarter in the cloud.
-            </p>
+            </p> */}
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
+      {/* <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 lg:gap-[37px] max-w-[356px]">
               <Link
                 to="/get-in-touch"
                 className="flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
@@ -55,30 +55,30 @@ export default function Home() {
 
             </div>
           </div>
-        </div>
+        </div> */}
 
       {/* Hero Vector Top */}
-      <div className="absolute top-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
+      {/* <div className="absolute top-0 left-0 right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorTop.svg"
             alt="Hero Vector Bottom"
             className="absolute top-0 left-0"
             style={{ width: '100%' }}
           />
-        </div>
+        </div> */}
 
       {/* Hero Vector Top 2 */}
-      <div className="absolute top-[40%] left-0 right-0 z-10 w-full h-full overflow-hidden">
+      {/* <div className="absolute top-[40%] left-0 right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroBgEffect.svg"
             alt="Hero Bg Effect"
             className="absolute top-0 left-0"
             style={{ width: '100%' }}
           />
-        </div>
+        </div> */}
 
       {/* Hero Vector Bottom */}
-      <div className="absolute bottom-0 left-[34.33px] right-0 z-10 w-full h-full overflow-hidden">
+      {/* <div className="absolute bottom-0 left-[34.33px] right-0 z-10 w-full h-full overflow-hidden">
           <img
             src="/images/home/HeroVectorBottom-1.svg"
             alt="Hero Vector Bottom"
@@ -97,10 +97,10 @@ export default function Home() {
               opacity: '1',
             }}
           />
-        </div>
+        </div> */}
 
       {/* Scroll Indicator */}
-      <button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+      {/* <button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
           <div className="absolute bottom-[40px] left-1/2 transform -translate-x-1/2 z-20 animate-bounce cursor-pointer">
             <div className="w-[37px] h-[55px] flex items-center justify-center">
               <svg width="38" height="55" viewBox="0 0 38 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </div>
         </button>
-      </div>
+      </div> */}
 
       <OurPartners />
 
