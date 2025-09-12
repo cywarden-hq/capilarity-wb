@@ -1,6 +1,7 @@
 import React from "react";
 import Orb from './Orb';
 import CountUp from '../../../components/CountUp';
+import Reveal from "../../../components/Reveal";
 
 export default function AboutUs() {
   return (
@@ -8,9 +9,11 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto">
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-15">
-          <h1 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-white leading-tight max-w-4xl mx-auto">
-            We are cloud-native builders, <br />engineers, & problem-solvers
-          </h1>
+          <Reveal animation="slideUp" duration="normal" delay={400}>
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-semibold text-white leading-tight max-w-4xl mx-auto">
+              We are cloud-native builders, <br />engineers, & problem-solvers
+            </h1>
+          </Reveal>
         </div>
 
         {/* Content Section */}

@@ -70,7 +70,7 @@ export default function Navbar() {
                                             <div className="flex items-center gap-1">
                                                 {item.label}
                                                 <svg
-                                                    className="w-3 h-3 text-white/70"
+                                                    className="w-3 h-3 text-white/70 group-hover:text-orange-500 transition-colors duration-300"
                                                     fill="none"
                                                     stroke="currentColor"
                                                     strokeWidth="2"
