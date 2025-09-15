@@ -11,7 +11,7 @@ const Observability = () => {
       {/* Hero Section */}
       <div className="min-h-screen bg-black relative overflow-hidden z-10">
         {/* Background Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center  pointer-events-none z-0">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
           <Reveal animation="slideUp" duration="normal" delay={200}>
             <h1 className="text-[50px] lg:text-[100px] xl:text-[180px] text-white select-none leading-none">
               OBSERVABILITY
