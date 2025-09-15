@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/home/Home'
 import GetInTouch from './pages/GetInTouch'
 import Observability from './pages/services/observability/Observability'
+import Soc from './pages/services/soc/Soc'
 import NotFound from './pages/NotFound'
 
 const Layout = () => {
@@ -36,6 +37,7 @@ function App() {
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />
+          <Route path="security-operation-center" element={<Soc />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

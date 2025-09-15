@@ -6,7 +6,7 @@ export const menuItems = [
         dropdownItems: [
             { label: "Observability", link: "/services/observability" },
             { label: "AI Development", link: "/services/ai-development" },
-            { label: "Managed DevOps", link: "/services/managed-devops" },
+            { label: "Security Operation Center (SOC)", link: "/services/security-operation-center" },
             { label: "DevSecOps", link: "/services/devsecops" },
         ]
     },
