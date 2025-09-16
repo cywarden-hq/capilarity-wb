@@ -7,10 +7,10 @@ export default function Services() {
             <section className="bg-white py-12 lg:py-24 relative overflow-hidden">
                 <div className="flex flex-col gap-12 lg:gap-20">
 
-                    <Reveal animation="slideRight" duration="normal" delay={200}>
+                    <Reveal animation="slideRight" duration="fast" delay={100}>
                         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
                             <img className="w-full max-w-md lg:max-w-full h-auto lg:h-full pr-6 mx-auto lg:mx-0 lg:hover:scale-101 lg:hover:translate-x-1 transition-all duration-300" src="/images/observability/service1.svg" alt="Service 1" />
-                            <Reveal animation="slideRight" duration="normal" delay={400}>
+                            <Reveal animation="slideRight" duration="fast" delay={200}>
                                 <div className="flex flex-col gap-6 lg:gap-10 p-6 lg:pr-20">
                                     <h1 className="text-3xl lg:text-5xl font-bold text-[#1F2937] leading-tight lg:leading-normal">Application Performance Monitoring APM</h1>
                                     <div className="flex flex-col gap-4 lg:gap-5 text-[#64748B]">
@@ -23,9 +23,9 @@ export default function Services() {
                         </div>
                     </Reveal>
 
-                    <Reveal animation="slideLeft" duration="normal" delay={200}>
+                    <Reveal animation="slideLeft" duration="fast" delay={100}>
                         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
-                            <Reveal animation="slideLeft" duration="normal" delay={400}>
+                            <Reveal animation="slideLeft" duration="fast" delay={200}>
                                 <div className="flex flex-col gap-6 lg:gap-10 p-6 lg:pl-20 order-2 lg:order-1">
                                     <h1 className="text-3xl lg:text-5xl font-bold text-[#1F2937] leading-tight lg:leading-normal">Real User Monitoring RUM</h1>
                                     <div className="flex flex-col gap-4 lg:gap-5 text-[#64748B]">
@@ -40,10 +40,10 @@ export default function Services() {
                         </div>
                     </Reveal>
 
-                    <Reveal animation="slideRight" duration="normal" delay={200}>
+                    <Reveal animation="slideRight" duration="normal" delay={100}>
                         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
                             <img className="w-full max-w-md lg:max-w-full h-auto lg:h-full pr-6 mx-auto lg:mx-0 lg:hover:scale-101 lg:hover:translate-x-1 transition-all duration-300" src="/images/observability/service3.svg" alt="Service 3" />
-                            <Reveal animation="slideRight" duration="normal" delay={400}>
+                            <Reveal animation="slideRight" duration="normal" delay={200}>
                                 <div className="flex flex-col gap-6 lg:gap-10 p-6 lg:pr-20">
                                     <h1 className="text-3xl lg:text-5xl font-bold text-[#1F2937] leading-tight lg:leading-normal">Infrastructure Monitoring</h1>
                                     <div className="flex flex-col gap-4 lg:gap-5 text-[#64748B]">

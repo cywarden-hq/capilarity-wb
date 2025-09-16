@@ -36,7 +36,7 @@ export default function GetInTouch() {
 
   return (
     <div className="min-h-screen bg-[#002857] p-3 pt-25 lg:p-20 lg:pt-40">
-      <Reveal animation="slideUp" duration="normal" delay={400}>
+      <Reveal animation="slideUp" duration="fast" delay={100}>
         <div className="bg-orange-50 rounded-2xl">
           {/* Main Content */}
           <div className="px-3 lg:px-[66px] py-5 lg:py-[56px]">
@@ -44,7 +44,7 @@ export default function GetInTouch() {
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 {/* Contact Form */}
                 <div className="order-2 lg:order-1">
-                  <Reveal animation="slideUp" duration="normal" delay={800}>
+                  <Reveal animation="slideUp" duration="fast" delay={200}>
                   <div className="bg-white border border-gray-200/50 rounded-[22px] p-8 lg:p-12 max-w-[564px]">
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Name Fields */}
@@ -201,7 +201,7 @@ export default function GetInTouch() {
 
                 {/* Right Content */}
                 <div className="order-1 lg:order-2 space-y-8">
-                  <Reveal animation="slideRight" duration="normal" delay={700}>
+                  <Reveal animation="slideRight" duration="fast" delay={300}>
                     {/* Header */}
                     <div className="space-y-4">
                       <h1 className="text-gray-700 font-open-sans text-[30px] lg:text-[41px] font-normal leading-[58px]">

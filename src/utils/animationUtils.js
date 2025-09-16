@@ -42,17 +42,21 @@ export const getStaggerDelay = (index, baseDelay = 100) => {
   return index * baseDelay;
 };
 
-// Animation presets (matching shadcn smoothness)
+// Animation presets (optimized for faster loading)
 export const ANIMATION_PRESETS = {
-  fast: 600,
-  normal: 1000,
-  slow: 1400
+  fast: 300,
+  normal: 500,
+  slow: 800
 };
 
-// Easing curves (matching shadcn)
+// Easing curves (optimized for smooth animations)
 export const EASING_CURVES = {
-  smooth: [0.25, 0.4, 0.25, 1], // shadcn standard
-  elegant: [0.23, 0.86, 0.39, 0.96], // shadcn elegant
-  gentle: [0.4, 0, 0.2, 1], // material design
-  easeOut: [0, 0, 0.2, 1]
+  smooth: [0.25, 0.4, 0.25, 1], // shadcn standard - smooth and natural
+  elegant: [0.23, 0.86, 0.39, 0.96], // shadcn elegant - bouncy but refined
+  gentle: [0.4, 0, 0.2, 1], // material design - gentle ease-out
+  easeOut: [0, 0, 0.2, 1], // standard ease-out
+  spring: [0.175, 0.885, 0.32, 1.275], // spring-like bounce
+  smoothOut: [0.25, 0.46, 0.45, 0.94], // very smooth ease-out
+  smoothIn: [0.55, 0.055, 0.675, 0.19], // smooth ease-in
+  bounce: [0.68, -0.55, 0.265, 1.55] // subtle bounce effect
 };

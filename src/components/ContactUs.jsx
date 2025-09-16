@@ -15,21 +15,21 @@ const ContactUs = () => {
     <section className="relative w-full min-h-[300px] sm:min-h-[300px] lg:min-h-[500px] overflow-hidden bg-orange-50/50 border border-solid border-transparent px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Reveal animation="slideRight" duration="normal" delay={400}>
+        <Reveal animation="slideRight" duration="fast" delay={100}>
           <img
             className="absolute w-32 sm:w-48 lg:w-80 h-8 sm:h-12 lg:h-14 top-0 -left-2 sm:-left-4 lg:-left-7"
             alt="Decorative group element"
             src={group3}
           />
         </Reveal>
-        <Reveal animation="slideLeft" duration="normal" delay={600}>
+        <Reveal animation="slideLeft" duration="fast" delay={200}>
           <img
             className="absolute w-12 sm:w-16 lg:w-20 h-8 sm:h-12 lg:h-14 top-8 sm:top-12 lg:top-16 right-4 sm:right-8 lg:right-16"
             alt="Decorative group element"
             src={image_top_right}
           />
         </Reveal>
-        <Reveal animation="slideRight" duration="normal" delay={800}>
+        <Reveal animation="slideRight" duration="fast" delay={300}>
           <img
             className="absolute w-8 sm:w-12 lg:w-14 h-4 sm:h-6 lg:h-8 top-16 sm:top-20 lg:top-24 left-4 sm:left-8 lg:left-16"
             alt="Decorative image element"
@@ -62,13 +62,13 @@ const ContactUs = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-6xl mx-auto">
         {/* Title */}
-        <Reveal animation="slideUp" duration="normal" delay={400}>
+        <Reveal animation="slideUp" duration="fast" delay={100}>
           <h1 className="mb-6 sm:mb-8 lg:mb-12 text-orange-600 font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl tracking-[-0.96px] leading-tight">
             Contact Us Today
           </h1>
         </Reveal>
         {/* Description */}
-        <Reveal animation="slideUp" duration="normal" delay={600}>
+        <Reveal animation="slideUp" duration="fast" delay={200}>
           <p className="mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto [font-family:'Inter-Regular',Helvetica] font-normal text-[#656565] text-base sm:text-lg lg:text-xl xl:text-2xl tracking-[0] leading-relaxed px-4">
             Request a 1-Week Cloud Security Assessment to analyze your current
             security posture across architecture, network, identity, data, and

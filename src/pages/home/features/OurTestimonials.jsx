@@ -14,7 +14,7 @@ const FeatureCard = ({ icon, title, description, className = "" }) => {
         <img
           src={icon}
           alt=""
-          className="object-contain aspect-[0.98] w-[60px] grayscale invert group-hover:grayscale-0 group-hover:invert-0 transition duration-300 ease-out"
+          className="object-contain aspect-[0.98] w-[60px] lg:grayscale lg:invert group-hover:grayscale-0 group-hover:invert-0 transition duration-300 ease-out"
         />
       </div>
       <h3 className="mt-5 text-base font-bold text-zinc-800 group-hover:text-orange-600 transition-colors duration-300">
@@ -31,41 +31,41 @@ const FeatureCard = ({ icon, title, description, className = "" }) => {
 const features = [
   {
     icon: "/images/home/testimonials/image1.svg",
-    title: "Cost & Utilization Reporting",
-    description: "Track and report modifications in cost\n and esource utilization in real-time,\n providing clear visibility and control\n over your financial and operational metrics.",
+    title: "Industry Expertise",
+    description: "Ready-to-deploy solutions tailored for BFSI, Healthcare, Manufacturing, Retail, E-commerce, Government, Supply Chain, Telecom, and Automotive.",
   },
   {
     icon: "/images/home/testimonials/image2.svg",
-    title: "Data-Driven Recommendations",
-    description: "Receive actionable recommendations\nbased on comprehensive data analysis\n of your AWS environment, optimizing\nresource allocation and cost efficiency.",
+    title: "Enterprise Functions",
+    description: "Out-of-the-box solutions supporting Observability, DevSecOps, SOC/NOC, AI Development and IT operations."
 
   },
   {
     icon: "/images/home/testimonials/image3.svg",
-    title: "Service Investigation",
-    description: "Gain deep insights into your services\n with advanced investigation tools that analyze."
+    title: "Any Ecosystem, Any Scale",
+    description: "Seamless support across on-premises, public, private, multi-cloud, and hybrid environments."
   },
   {
     icon: "/images/home/testimonials/image4.svg",
-    title: "Data Quality Management",
-    description: "Enhance data accuracy with robust\nquality checks, ensuring reliable and\nactionable insights.",
+    title: "Global Cloud Specialists",
+    description: "Cloud professionals with certified experts across AWS, Azure, GCP, and Oracle.",
     className: "py-5 pr-12 pl-5 max-md:pr-5"
   },
   {
     icon: "/images/home/testimonials/image5.svg",
-    title: "Budgeting and Forecasting",
-    description: "Dynamic budgeting adjusts to cloud\nchanges, while predictive analytics costs\nfrom historical data.",
+    title: "Proven Trust",
+    description: "Partnering with 12+ enterprises worldwide, including Global Fortune 500 companies.",
     className: "py-6"
   },
   {
     icon: "/images/home/testimonials/image6.svg",
-    title: "Auto Remediation",
-    description: "Quickly resolve issues with automatic\nremediation of assets, minimizing\ndowntime & maintaining optimal\nperformance with minimal intervention."
+    title: "SOC Leadership",
+    description: "Global expertise in managed Security Operations Center (SOC) services and solutions."
   },
   {
     icon: "/images/home/testimonials/image7.svg",
-    title: "Auto Tagging",
-    description: "Effortlessly categorize assets with\nautomated tagging, ensuring consistent\n and accurate resource management\n without manual input."
+    title: "Next-Gen Security",
+    description: "Automated threat prediction, detection, and rapid response with advanced MDR solutions."
   }
 ];
 
@@ -90,7 +90,7 @@ export const OurTestimonials = () => {
       </div>
       <div className="flex z-10 flex-col -mt-3 max-w-full w-[952px]">
         <header className="self-center ml-4 text-6xl font-extrabold tracking-tighter text-black max-md:max-w-full max-md:text-4xl hover:text-orange-600 transition-colors duration-300 ease-out cursor-default">
-          <Reveal animation="slideUp" duration="normal" delay={400}>
+          <Reveal animation="slideUp" duration="fast" delay={100}>
             <span className="font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-300 ease-out">Testimonials</span>
           </Reveal>
         </header>
@@ -100,7 +100,7 @@ export const OurTestimonials = () => {
           <div className="flex gap-5 max-md:flex-col">
             {/* First Column */}
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
-              <Reveal animation="slideRight" duration="normal" delay={800}>
+              <Reveal animation="slideRight" duration="fast" delay={200}>
                 <div className="max-md:mt-7">
                   <FeatureCard
                     icon={features[0].icon}
@@ -122,7 +122,7 @@ export const OurTestimonials = () => {
 
             {/* Second Column */}
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <Reveal animation="slideUp" duration="normal" delay={1000}>
+              <Reveal animation="slideUp" duration="fast" delay={300}>
                 <div className="max-md:mt-7">
                   <FeatureCard
                     icon={features[2].icon}
@@ -152,7 +152,7 @@ export const OurTestimonials = () => {
 
             {/* Third Column */}
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <Reveal animation="slideLeft" duration="normal" delay={1200}>
+              <Reveal animation="slideLeft" duration="fast" delay={400}>
                 <div className="grow mt-60 max-md:mt-10">
                   <FeatureCard
                     icon={features[5].icon}
