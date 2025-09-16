@@ -75,13 +75,13 @@ const OurServices = () => {
             <div className="relative z-10 px-6 lg:px-[102px] max-w-[1447px] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <Reveal animation="slideUp" duration="normal" delay={400}>
+                    <Reveal animation="slideUp" duration="fast" delay={100}>
                         <h2 className="text-[#2C2C2C] font-open-sans text-4xl lg:text-[48px] font-semibold leading-normal tracking-[-0.96px] mb-4">
                             <span className="text-[#2C2C2C]">Our </span>
                             <span className="text-black">Services</span>
                         </h2>
                     </Reveal>
-                    <Reveal animation="slideUp" duration="slow" delay={600}>
+                    <Reveal animation="slideUp" duration="fast" delay={200}>
                         <p className="text-black/53 font-open-sans text-lg lg:text-2xl font-normal leading-[150%] max-w-[888px] mx-auto">
                             Comprehensive cloud transformation solutions designed for enterprise success
                         </p>
@@ -92,7 +92,7 @@ const OurServices = () => {
                 <div className="relative max-w-[1302px] mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                         {/* Observability Card */}
-                        <Reveal animation="slideRight" duration="normal" delay={800}>
+                        <Reveal animation="slideRight" duration="fast" delay={300}>
                             <Link to="/services/observability">
                                 <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                                     <div className="flex items-center justify-center bg-orange-50 w-16 h-16 rounded-xl mb-6 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
@@ -113,7 +113,7 @@ const OurServices = () => {
                             </Link>
                         </Reveal>
                         {/* AI Development Card */}
-                        <Reveal animation="slideLeft" duration="normal" delay={1000}>
+                        <Reveal animation="slideLeft" duration="fast" delay={400}>
                             <Link to="/services/ai-development">
                                 <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                                     <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
@@ -135,7 +135,7 @@ const OurServices = () => {
                         </Reveal>
 
                         {/* Managed DevOps Card */}
-                        <Reveal animation="slideRight" duration="normal" delay={1200}>
+                        <Reveal animation="slideRight" duration="fast" delay={500}>
                             <Link to="/services/managed-devops">
                                 <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                                     <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
@@ -157,7 +157,7 @@ const OurServices = () => {
                         </Reveal>
 
                         {/* DevSecOps Card */}
-                        <Reveal animation="slideLeft" duration="normal" delay={1400}>
+                        <Reveal animation="slideLeft" duration="fast" delay={600}>
                             <Link to="/services/devsecops">
                                 <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                                     <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">

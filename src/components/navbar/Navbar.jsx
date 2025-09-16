@@ -42,7 +42,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 lg:px-[74px] transition-all duration-1000 ease-in-out ${isScrolled
+            <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-[74px] transition-all duration-1000 ease-in-out ${isScrolled
                     ? 'bg-black shadow-lg backdrop-blur-sm py-[2px]'
                     : 'bg-transparent py-[15px]'
                 }`}>
@@ -52,13 +52,13 @@ export default function Navbar() {
                         <img
                             src="/logo.svg"
                             alt="Capilarity"
-                            className={'h-[50px] w-[162px]'}
+                            className={'h-[40px] w-[130px] sm:h-[45px] sm:w-[145px] md:h-[50px] md:w-[162px]'}
                         />
                     </div>
                 </Link>
                 {/* Navigation Menu */}
-                <div className="hidden lg:flex">
-                    <div className="flex gap-8 lg:gap-[13px] bg-gray-900/10 shadow-xl backdrop-blur-sm rounded-2xl px-[20px] py-[12px]">
+                <div className="hidden md:flex">
+                    <div className="flex gap-4 md:gap-6 lg:gap-[13px] bg-gray-900/10 shadow-xl backdrop-blur-sm rounded-2xl px-4 md:px-6 lg:px-[20px] py-2 md:py-3 lg:py-[12px]">
                         {menuItems.map((item, index) => (
                             <div key={index} className="relative">
                                 {item.hasDropdown ? (
@@ -66,7 +66,7 @@ export default function Navbar() {
                                         data-dropdown={item.label.toLowerCase()}
                                         onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                                     >
-                                        <button className="relative text-white text-md font-medium px-4 py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none group">
+                                        <button className="relative text-white text-sm md:text-md font-medium px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none group">
                                             <div className="flex items-center gap-1">
                                                 {item.label}
                                                 <svg
@@ -85,7 +85,7 @@ export default function Navbar() {
 
                                         {/* Dropdown Menu */}
                                         {openDropdown === item.label && (
-                                            <div className="absolute top-13 left-0 mt-2 w-64 pl-3 bg-gray-700 backdrop-blur-md rounded-4xl shadow-lg border border-white/30 py-2 z-50">
+                                            <div className="absolute top-13 left-0 mt-2 w-56 md:w-64 pl-3 bg-gray-700 backdrop-blur-md rounded-4xl shadow-lg border border-white/30 py-2 z-50">
                                                 {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
                                                     <Link
                                                         key={dropdownIndex}
@@ -102,7 +102,7 @@ export default function Navbar() {
                                 ) : (
                                     <Link
                                         to={item.link}
-                                        className="relative text-white text-md font-medium px-4 py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none block group"
+                                        className="relative text-white text-sm md:text-md font-medium px-2 md:px-3 lg:px-4 py-1 md:py-2 rounded-full transition-all duration-200 hover:text-orange-500 focus:outline-none block group"
                                     >
                                         {item.label}
                                         {/* Animated underline */}
@@ -116,15 +116,15 @@ export default function Navbar() {
                 <div className="flex">
                     <Link
                         to="/get-in-touch"
-                        className="hidden lg:flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
-                        <span className="hidden lg:block text-white text-base font-bold leading-[150%] transition-colors duration-300">
+                        className="hidden md:flex group items-center justify-center px-4 md:px-6 lg:px-8 py-[6px] md:py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
+                        <span className="text-white text-sm md:text-base font-bold leading-[150%] transition-colors duration-300">
                             Get Started
                         </span>
                     </Link>
 
                     {/* Mobile menu button */}
                     <button
-                        className="lg:hidden transition-colors duration-300 text-white"
+                        className="md:hidden transition-colors duration-300 text-white"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? (

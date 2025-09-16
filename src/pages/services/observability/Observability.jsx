@@ -12,7 +12,7 @@ const Observability = () => {
       <div className="min-h-screen bg-black relative overflow-hidden z-10">
         {/* Background Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-          <Reveal animation="slideUp" duration="normal" delay={200}>
+          <Reveal animation="slideUp" duration="fast" delay={100}>
             <h1 className="text-[50px] lg:text-[100px] xl:text-[180px] text-white select-none leading-none">
               OBSERVABILITY
             </h1>
@@ -39,12 +39,12 @@ const Observability = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <Reveal animation="slideUp" duration="normal" delay={200}>
+            <Reveal animation="slideUp" duration="normal" delay={100}>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-700 mb-4">
                 Capilarity NextGen Observability: From Metrics to Business Impact
               </h2>
             </Reveal>
-            <Reveal animation="slideUp" duration="normal" delay={400}>
+            <Reveal animation="slideUp" duration="normal" delay={200}>
               <p className="text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto">
                 Insights, case studies, and thought leadership to accelerate your cloud journey
               </p>
@@ -54,7 +54,7 @@ const Observability = () => {
           {/* Three Cards Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
             {/* Card 1: Technical Foundation */}
-            <Reveal animation="slideUp" duration="normal" delay={600}>
+            <Reveal animation="slideUp" duration="normal" delay={300}>
               <div className="group bg-white rounded-xl p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer h-[250px]">
                 {/* Background Number */}
                 <div className="absolute -bottom-4 right-2 text-[120px] font-black text-gray-200/30 select-none pointer-events-none">
@@ -81,7 +81,7 @@ const Observability = () => {
             </Reveal>
 
             {/* Card 2: Operational Agility */}
-            <Reveal animation="slideUp" duration="normal" delay={800}>
+            <Reveal animation="slideUp" duration="normal" delay={400}>
               <div className="group bg-white rounded-xl p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer h-[250px]">
                 {/* Background Number */}
                 <div className="absolute -bottom-4 right-2 text-[120px] font-black text-gray-200/30 select-none pointer-events-none">
@@ -108,7 +108,7 @@ const Observability = () => {
             </Reveal>
 
             {/* Card 3: Business Alignment */}
-            <Reveal animation="slideUp" duration="normal" delay={1000}>
+            <Reveal animation="slideUp" duration="normal" delay={500}>
               <div className="group bg-white rounded-xl p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer h-[250px]">
                 {/* Background Number */}
                 <div className="absolute -bottom-4 right-2 text-[120px] font-black text-gray-200/30 select-none pointer-events-none">

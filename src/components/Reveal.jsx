@@ -41,7 +41,7 @@ const Reveal = ({
   return (
     <div
       ref={ref}
-      className={`transition-all ease-out ${animationClasses} ${className}`}
+      className={`transition-all ease-in-out ${animationClasses} ${className}`}
       style={style}
       {...props}
     >

@@ -133,17 +133,17 @@ export function HeroGeometric({
 
   return (
     <>
-      <style jsx>{`
+      <style>{`
         @keyframes gradient-shift {
           0% {
-            background-position: 0% 50%;
+            background-position: 200% 50%;
           }
           100% {
-            background-position: 200% 50%;
+            background-position: -200% 50%;
           }
         }
         .animate-gradient-shift {
-          animation: gradient-shift 8s ease-in-out infinite;
+          animation: gradient-shift 25s linear infinite;
         }
       `}</style>
       <div
@@ -212,7 +212,7 @@ export function HeroGeometric({
                 <br />
                 <span
                   className={cn(
-                    "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300",
+                    "bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-rose-400",
                     "bg-[length:200%_100%] animate-gradient-shift"
                   )}>
                   {title2}
