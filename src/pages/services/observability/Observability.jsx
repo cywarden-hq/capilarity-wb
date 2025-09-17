@@ -138,7 +138,7 @@ const Observability = () => {
       </section>
       <Services />
       <Analytics />
-      <FeaturedContent />
+      {/* <FeaturedContent /> */}
     </>
   );
 };

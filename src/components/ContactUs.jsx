@@ -77,7 +77,7 @@ const ContactUs = () => {
           </p>
         </Reveal>
         {/* CTA Button */}
-        <Reveal animation="slideRight" duration="normal" delay={700}>
+        <Reveal animation="slideRight" duration="normal" delay={300}>
           <Link
             to="/get-in-touch"
             className="group inline-flex items-center justify-center w-38 sm:w-46 lg:w-54 h-12 sm:h-14 lg:h-16 rounded-full border-2 border-orange-200 hover:border-orange-500 hover:bg-orange-500 hover:scale-105 transition-all duration-300 ease-out bg-white/80 backdrop-blur-sm"
