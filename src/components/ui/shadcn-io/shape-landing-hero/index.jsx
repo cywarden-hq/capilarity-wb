@@ -143,7 +143,7 @@ export function HeroGeometric({
           }
         }
         .animate-gradient-shift {
-          animation: gradient-shift 25s linear infinite;
+          animation: gradient-shift 50s linear infinite;
         }
       `}</style>
       <div

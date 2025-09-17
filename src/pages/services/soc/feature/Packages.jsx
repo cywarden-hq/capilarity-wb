@@ -70,7 +70,7 @@ export default function Packages() {
                         <div
                             key={pkg.id}
                             className="flex flex-col w-full sm:w-[350px] lg:w-[390px] h-auto lg:h-[550px] bg-[#0D0F11] rounded-3xl 
-                        hover:shadow-xl hover:scale-103 hover:border-2 hover:border-orange-500 transition-all duration-300 ease-out cursor-pointer"
+                        shadow-lg shadow-orange-500/40 hover:scale-103 hover:border-2 hover:border-orange-500 transition-all duration-300 ease-out cursor-pointer"
                         >
                             {/* Main content with padding */}
                             <div className="flex flex-col gap-3 pt-6 sm:pt-8 pb-4 pr-4 sm:pr-8 pl-4 sm:pl-8">

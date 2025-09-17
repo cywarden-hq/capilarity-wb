@@ -1,7 +1,116 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Reveal from '../../../../components/Reveal'
 
+// Card data as const variable
+const securityHighlightCards = [
+    {
+        id: 1,
+        title: "Continuous Monitoring",
+        description: "24/7 detection across networks, endpoints, and cloud.",
+        image: "/images/soc/highlights_1.svg",
+        imageAlt: "Continuous Monitoring",
+        style: "bg-[#cfdefa]"
+    },
+    {
+        id: 2,
+        title: "Real-Time Response",
+        description: "Stop threats in motion with our MDR, powered response.",
+        image: "/images/soc/highlights_2.svg",
+        imageAlt: "Real-Time Response",
+        style: "bg-[#E9DFFF]"
+    },
+    {
+        id: 3,
+        title: "Compliance Support",
+        description: "Automated reports and audit assistance.",
+        image: "/images/soc/highlights_3.svg",
+        imageAlt: "Compliance Support",
+        style: "bg-[#ffd6bd]"
+    },
+    {
+        id: 4,
+        title: "Threat Hunting",
+        description: "Proactive hunts to catch what automated tools are missing.",
+        image: "/images/soc/highlights_1.svg",
+        imageAlt: "Threat Hunting",
+        style: "bg-[#5186EB]"
+    },
+    {
+        id: 5,
+        title: "Expert Guidance",
+        description: "Direct access to security analysts when you need them most.",
+        image: "/images/soc/highlights_2.svg",
+        imageAlt: "Expert Guidance",
+        style: "bg-[#cfdefa]"
+    },
+    {
+        id: 6,
+        title: "Continuous Monitoring",
+        description: "24/7 detection across networks, endpoints, and cloud.",
+        image: "/images/soc/highlights_3.svg",
+        imageAlt: "Continuous Monitoring",
+        style: "bg-[#E9DFFF]"
+    }
+]
+
+// Reusable Card Component
+const SecurityCard = ({ card, index, delay, isMiddle = false }) => {
+    const scaleClass = isMiddle ? 'scale-100' : 'scale-90'
+    const containerClass = isMiddle
+        ? 'max-w-[300px] sm:max-w-[350px] md:max-w-[400px]'
+        : 'max-w-[200px] sm:max-w-[250px] md:max-w-[268px]'
+    const imageClass = isMiddle
+        ? 'h-[250px] sm:h-[300px] md:h-[350px]'
+        : 'h-[200px] sm:h-[250px] md:h-[268px]'
+
+    return (
+        <div className={`flex flex-col gap-4 md:gap-5 items-center hover:scale-[1.01] transition-all duration-300 ease-out cursor-pointer ${scaleClass}`}>
+            <div className={`rounded-4xl p-10 ${card.style} w-full ${containerClass} ${imageClass} flex items-center justify-center`}>
+                <img
+                    src={card.image}
+                    alt={card.imageAlt}
+                    className="w-full h-full object-contain rounded-lg"
+                />
+            </div>
+            <div className={`flex flex-col gap-3 md:gap-5 w-full ${containerClass}`}>
+                <h3 className={`font-bold ${isMiddle ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>{card.title}</h3>
+                <p className={`text-gray-600 ${isMiddle ? 'text-base md:text-lg' : 'text-sm md:text-base'}`}>{card.description}</p>
+            </div>
+        </div>
+    )
+}
+
 export default function SecurityHighlight() {
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const cardsPerView = 3
+
+    const nextCards = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex + 1 >= securityHighlightCards.length
+                ? 0
+                : prevIndex + 1
+        )
+    }
+
+    const prevCards = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex - 1 < 0
+                ? securityHighlightCards.length - 1
+                : prevIndex - 1
+        )
+    }
+
+    // Create circular carousel by wrapping around the array
+    const getVisibleCards = () => {
+        const cards = []
+        for (let i = 0; i < cardsPerView; i++) {
+            const index = (currentIndex + i) % securityHighlightCards.length
+            cards.push(securityHighlightCards[index])
+        }
+        return cards
+    }
+
+    const visibleCards = getVisibleCards()
     return (
         <section className="relative min-h-screen">
             {/* Background Pattern */}
@@ -22,46 +131,39 @@ export default function SecurityHighlight() {
                     </h1>
                 </Reveal>
 
-                <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-20 justify-center max-w-7xl pt-8 pb-8 md:pt-15 md:pb-15 mx-auto z-10 border-t border-b border-gray-200">
-                    <Reveal animation="slideUp" duration="normal" delay={300} easing="smoothOut">
-                        <div className="flex flex-col gap-4 md:gap-5 items-center hover:scale-105 transition-all duration-300 ease-out cursor-pointer">
-                            <img 
-                                src="/images/soc/highlights_1.svg" 
-                                alt="Continuous Monitoring" 
-                                className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[268px] h-auto rounded-lg" 
+                <div className="flex justify-between items-center sm:gap-2 md:gap-5 lg:gap-20 relative max-w-7xl pt-8 pb-8 md:pt-15 md:pb-15 mx-auto z-10 border-t border-b border-gray-200">
+                    <button
+                        onClick={prevCards}
+                        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FE8032] text-white hover:bg-[#e6732a] transition-colors duration-200 shadow-lg hover:shadow-xl"
+                        aria-label="Previous cards"
+                    >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    {/* Cards Container */}
+                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-20 justify-center items-center">
+                        {visibleCards.map((card, index) => (
+                            <SecurityCard
+                                key={card.id}
+                                card={card}
+                                index={index}
+                                delay={300 + (index * 100)}
+                                isMiddle={index === 1}
                             />
-                            <div className="flex flex-col gap-3 md:gap-5 w-full max-w-[268px]">
-                                <h3 className="text-xl md:text-2xl font-bold">Continuous Monitoring</h3>
-                                <p className="text-gray-600 text-sm md:text-base">24/7 detection across networks, endpoints, and cloud.</p>
-                            </div>
-                        </div>
-                    </Reveal>
-                    <Reveal animation="slideUp" duration="normal" delay={400} easing="smoothOut">
-                        <div className="flex flex-col gap-4 md:gap-5 items-center hover:scale-105 transition-all duration-300 ease-out cursor-pointer">
-                            <img 
-                                src="/images/soc/highlights_2.svg" 
-                                alt="Real-Time Response" 
-                                className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[370px] h-auto rounded-lg" 
-                            />
-                            <div className="flex flex-col gap-3 md:gap-5 w-full max-w-[370px]">
-                                <h3 className="text-xl md:text-2xl font-bold">Real-Time Response</h3>
-                                <p className="text-gray-600 text-sm md:text-base">Stop threats in motion with our MDR, powered response.</p>
-                            </div>
-                        </div>
-                    </Reveal>
-                    <Reveal animation="slideUp" duration="normal" delay={500} easing="smoothOut">
-                        <div className="flex flex-col gap-4 md:gap-5 items-center hover:scale-105 transition-all duration-300 ease-out cursor-pointer">
-                            <img 
-                                src="/images/soc/highlights_3.svg" 
-                                alt="Compliance Support" 
-                                className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[268px] h-auto rounded-lg" 
-                            />
-                            <div className="flex flex-col gap-3 md:gap-5 w-full max-w-[268px]">
-                                <h3 className="text-xl md:text-2xl font-bold">Compliance Support</h3>
-                                <p className="text-gray-600 text-sm md:text-base">Automated reports and audit assistance.</p>
-                            </div>
-                        </div>
-                    </Reveal>
+                        ))}
+                    </div>
+
+                    <button
+                        onClick={nextCards}
+                        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FE8032] text-white hover:bg-[#e6732a] transition-colors duration-200 shadow-lg hover:shadow-xl"
+                        aria-label="Next cards"
+                    >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
