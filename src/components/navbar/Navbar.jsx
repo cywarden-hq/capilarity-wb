@@ -85,12 +85,12 @@ export default function Navbar() {
 
                                         {/* Dropdown Menu */}
                                         {openDropdown === item.label && (
-                                            <div className="absolute top-13 left-0 mt-2 w-56 md:w-64 pl-3 bg-gray-700 backdrop-blur-md rounded-4xl shadow-lg border border-white/30 py-2 z-50">
+                                            <div className="absolute top-13 left-0 mt-2 w-56 md:w-64 px-3 bg-black/80 backdrop-blur-xl shadow-lg rounded-4xl border border-white/20 py-2 z-50">
                                                 {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
                                                     <Link
                                                         key={dropdownIndex}
                                                         to={dropdownItem.link}
-                                                        className="block px-4 py-3 text-sm text-white hover:text-orange-500 transition-colors duration-200"
+                                                        className="block px-4 py-3 text-sm font-medium text-white/90 hover:text-orange-400 hover:bg-white/5 transition-all duration-300 rounded-2xl mx-1"
                                                         onClick={() => setOpenDropdown(null)}
                                                     >
                                                         {dropdownItem.label}

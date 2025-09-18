@@ -27,7 +27,7 @@ export default function Hero() {
 
         <header className="absolute w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[790px] top-0 left-0 bg-black">
           <h1
-            className="absolute w-full top-[150px] lg:top-[40px] left-[20px] sm:top-[50px] sm:left-[30px] md:top-[60px] md:left-[50px] lg:top-[87px] lg:left-[125px] text-transparent text-[40px] sm:text-[60px] md:text-[80px] lg:text-[120px] xl:text-[169px] leading-tight px-4 sm:px-6 md:px-8 lg:px-0"
+            className="absolute w-full top-[150px] lg:top-[100px] left-[20px] sm:top-[50px] sm:left-[30px] md:top-[60px] md:left-[50px] lg:top-[87px] lg:left-[125px] text-transparent text-[40px] sm:text-[60px] md:text-[80px] lg:text-[120px] xl:text-[150px] leading-tight px-4 sm:px-6 md:px-8 lg:px-0"
           >
             <span className="text-[#ff9900]">Security <br /> </span>
             <span className="text-white">Operation <br /> Center</span>
