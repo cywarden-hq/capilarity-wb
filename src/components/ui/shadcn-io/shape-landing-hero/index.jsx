@@ -145,6 +145,35 @@ export function HeroGeometric({
         .animate-gradient-shift {
           animation: gradient-shift 50s linear infinite;
         }
+        
+        .boujee-text {
+          --bg-size: 400%;
+          --color-one: rgb(129 140 248); /* indigo-400 - blue */
+          --color-two: rgb(251 146 60); /* orange-400 - orange */
+          background: linear-gradient(
+              90deg,
+              var(--color-one),
+              var(--color-two),
+              var(--color-one)
+            )
+            0 0 / var(--bg-size) 100%;
+          color: transparent;
+          background-clip: text;
+        }
+        
+        @media (prefers-reduced-motion: no-preference) {
+          .boujee-text {
+            animation: move-bg 50s linear infinite;
+          }
+          @keyframes move-bg {
+            from {
+              background-position: var(--bg-size) 0;
+            }
+            to {
+              background-position: 0 0;
+            }
+          }
+        }
       `}</style>
       <div
         className={cn(
@@ -210,11 +239,7 @@ export function HeroGeometric({
                   {title1}
                 </span>
                 <br />
-                <span
-                  className={cn(
-                    "bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-rose-400",
-                    "bg-[length:200%_100%] animate-gradient-shift"
-                  )}>
+                <span className="boujee-text">
                   {title2}
                 </span>
               </h1>
@@ -238,11 +263,11 @@ export function HeroGeometric({
                   </span>
                 </Link>
 
-                <button 
+                <button
                   onClick={() => {
                     const element = document.getElementById('our-services');
                     if (element) {
-                      element.scrollIntoView({ 
+                      element.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                       });
