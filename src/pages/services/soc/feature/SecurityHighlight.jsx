@@ -31,26 +31,18 @@ const securityHighlightCards = [
         id: 4,
         title: "Threat Hunting",
         description: "Proactive hunts to catch what automated tools are missing.",
-        image: "/images/soc/highlights_1.svg",
+        image: "/images/soc/highlights_4.svg",
         imageAlt: "Threat Hunting",
-        style: "bg-[#5186EB]"
+        style: "bg-[#ffebee]"
     },
     {
         id: 5,
         title: "Expert Guidance",
         description: "Direct access to security analysts when you need them most.",
-        image: "/images/soc/highlights_2.svg",
+        image: "/images/soc/highlights_5.svg",
         imageAlt: "Expert Guidance",
-        style: "bg-[#cfdefa]"
+        style: "bg-[#c9d1ff]"
     },
-    {
-        id: 6,
-        title: "Continuous Monitoring",
-        description: "24/7 detection across networks, endpoints, and cloud.",
-        image: "/images/soc/highlights_3.svg",
-        imageAlt: "Continuous Monitoring",
-        style: "bg-[#E9DFFF]"
-    }
 ]
 
 // Reusable Card Component
