@@ -6,10 +6,10 @@ export default function WhatWeDo() {
             <p className="text-xl px-40 font-normal text-center text-[#030303] leading-[200%]">
                 Capilarity is a consulting and managed services firm specializing in enterprise digital infrastructure. 
                 Since 2006, we’ve partnered with Fortune 500 leaders and global enterprises to architect, secure, and manage the systems powering modern business. 
-                Our Agile- and DevOps-driven approach ensures every solution—sovereign cloud, zero-trust security, or large-scale AI—is delivered with reliability, scalability, and cost-efficiency. 
+                Our Agile and DevOps-driven approach ensures every solution sovereign cloud, zero-trust security, or large-scale AI is delivered with reliability, scalability, and cost-efficiency. 
                 As an extension of our clients’ teams, we enable resilient operations and accelerate innovation worldwide.
             </p>
-            <div className="max-w-7xl">
+            <div className="max-w-7xl">     
                 <div className="relative flex flex-col lg:flex-row gap-16 lg:gap-20">
                     {/* Left side - Text content */}
                     <div className="w-[85%]">

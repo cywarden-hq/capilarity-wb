@@ -18,7 +18,7 @@ export default function WhyAi() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
                     
                     {/* Top-Left Block */}
-                    <div className="bg-[#D9D9D9] py-5 px-15 rounded-lg text-center cursor-pointer hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#E7F6FF] py-5 px-15 rounded-lg text-center cursor-pointer hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-2xl font-semibold text-black mb-6">
                             A Partner Invested in Your Success
                         </h3>
@@ -48,7 +48,7 @@ export default function WhyAi() {
                     </div>
 
                     {/* Bottom-Right Block */}
-                    <div className="bg-[#D9D9D9] py-5 px-15 rounded-lg text-center cursor-pointer hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#E7F6FF] py-5 px-15 rounded-lg text-center cursor-pointer hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-2xl font-semibold text-black mb-6">
                             Security at the Core of Everything We Build
                         </h3>

@@ -76,6 +76,25 @@ export default function Services() {
                             content={["Robotic Process Automation (RPA): We deploy digital 'workers' to manage routine processes, reducing errors and saving valuable time."]}
                         />
                     </div>
+
+                    {/* Row 4 - Left: Predictive Modelling & Forecasting */}
+                    <div className="flex flex-col lg:flex-row gap-12">
+                        <AlternatingCard
+                            type="card"
+                            title="Predictive Modelling & Forecasting"
+                            content={[
+                                "Time, Series Forecasting: We identify patterns over time to predict future sales, demand, and market shifts."
+                            ]}
+                        />
+
+                        {/* Row 4 - Right: Predictive Modelling & Forecasting */}
+                        <AlternatingCard
+                            type="content"
+                            title="We build predictive models to forecast trends, anticipate behaviour, and drive proactive decisions."
+                            graphicSrc="/images/ai/services4.svg"
+                            graphicAlt="Predictive Modelling & Forecasting"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

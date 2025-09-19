@@ -26,7 +26,7 @@ const AlternatingCard = ({
 
     if (type === 'card') {
         return (
-            <div className={`bg-[#2E82B5] p-8 rounded-lg w-full lg:w-[40%] cursor-pointer hover:scale-102 transition-all duration-300 ease-out ${className}`}>
+            <div className={`bg-[#002266] p-8 rounded-lg w-full lg:w-[40%] cursor-pointer hover:scale-102 transition-all duration-300 ease-out ${className}`}>
                 <div className="flex flex-col h-full p-5 gap-6 border-1 border-white">
                     <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
                         {title}
