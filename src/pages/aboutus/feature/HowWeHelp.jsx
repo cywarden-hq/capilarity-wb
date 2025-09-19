@@ -4,11 +4,6 @@ export default function HowWeHelp() {
     return (
         <div className="relative min-h-screen bg-white py-30 px-20">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col gap-5">
-                    <hr className="absolute top-0 right-0 w-[65%] h-0.5 bg-[#808080]" />
-                    <hr className="absolute top-10 right-0 w-[65%] h-0.5 bg-[#808080]" />
-                </div>
-
                 {/* Header Content */}
                 <div className="flex flex-col gap-20 mb-16">
                     <h2 className="text-5xl lg:text-6xl font-semibold text-black">

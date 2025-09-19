@@ -9,6 +9,7 @@ import Soc from './pages/services/soc/Soc'
 import Devsecops from './pages/services/devsecops/Devsecops'
 import NotFound from './pages/NotFound'
 import Aboutus from './pages/aboutus/Aboutus'
+import AiDevelopment from './pages/services/ai/AiDevelopment'
 
 const Layout = () => {
   const location = useLocation();
@@ -40,6 +41,7 @@ function App() {
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />
+          <Route path="ai-development" element={<AiDevelopment />} />
           <Route path="security-operation-center" element={<Soc />} />
           <Route path="devsecops" element={<Devsecops />} />
         </Route>
