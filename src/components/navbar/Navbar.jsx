@@ -85,7 +85,7 @@ export default function Navbar() {
 
                                         {/* Dropdown Menu */}
                                         {openDropdown === item.label && (
-                                            <div className="absolute top-13 left-0 mt-2 w-56 md:w-64 px-3 bg-black/80 backdrop-blur-xl shadow-lg rounded-xl border border-white/20 py-2 z-50">
+                                            <div className="absolute top-13 left-0 mt-2 w-56 md:w-64 px-3 bg-black/90 backdrop-blur-xl shadow-lg rounded-xl border border-white/20 py-2 z-50">
                                                 {item.dropdownItems?.map((dropdownItem, dropdownIndex) => (
                                                     <Link
                                                         key={dropdownIndex}

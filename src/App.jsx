@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import WhyUs from "./pages/why-us/index.jsx";
 import Aboutus from './pages/aboutus/Aboutus'
 import AiDevelopment from './pages/services/ai/AiDevelopment'
+import Partners from './pages/partners/Partners'
 
 const Layout = () => {
   const location = useLocation();
@@ -38,6 +39,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="get-in-touch" element={<GetInTouch />} />
         <Route path="about-us" element={<Aboutus />} />
+        <Route path="why-us" element={<WhyUs />} />
+        <Route path="partners" element={<Partners />} />
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />
@@ -45,7 +48,6 @@ function App() {
           <Route path="security-operation-center" element={<Soc />} />
           <Route path="devsecops" element={<Devsecops />} />
         </Route>
-        <Route path="/why-us" element={<WhyUs />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
