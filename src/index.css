@@ -160,3 +160,27 @@
     @apply bg-background text-foreground;
     }
 }
+
+/* 
+  1. Define your custom animation keyframes.
+  This creates the animation that moves an element from left to right.
+*/
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* 
+    2. Create a custom utility class that uses your animation.
+    The `@layer utilities` directive tells Tailwind to treat this as a utility class.
+  */
+  @layer utilities {
+    .animate-scroll {
+      /* Adjust the duration (40s) to make the scroll faster or slower */
+      animation: scroll 40s linear infinite;
+    }
+  }
