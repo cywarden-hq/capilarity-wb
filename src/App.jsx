@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import GetInTouch from './pages/GetInTouch'
 import Observability from './pages/services/observability/Observability'
 import Soc from './pages/services/soc/Soc'
+import Devsecops from './pages/services/devsecops/Devsecops'
 import NotFound from './pages/NotFound'
 
 const Layout = () => {
@@ -38,6 +39,7 @@ function App() {
         <Route path="services">
           <Route path="observability" element={<Observability />} />
           <Route path="security-operation-center" element={<Soc />} />
+          <Route path="devsecops" element={<Devsecops />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
