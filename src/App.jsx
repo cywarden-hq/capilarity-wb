@@ -9,6 +9,8 @@ import Soc from "./pages/services/soc/Soc";
 import Devsecops from "./pages/services/devsecops/Devsecops";
 import NotFound from "./pages/NotFound";
 import WhyUs from "./pages/why-us/index.jsx";
+import Aboutus from './pages/aboutus/Aboutus'
+import AiDevelopment from './pages/services/ai/AiDevelopment'
 
 const Layout = () => {
   const location = useLocation();
@@ -35,9 +37,11 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="get-in-touch" element={<GetInTouch />} />
+        <Route path="about-us" element={<Aboutus />} />
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />
+          <Route path="ai-development" element={<AiDevelopment />} />
           <Route path="security-operation-center" element={<Soc />} />
           <Route path="devsecops" element={<Devsecops />} />
         </Route>
