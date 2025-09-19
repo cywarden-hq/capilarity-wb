@@ -11,6 +11,6 @@ export const menuItems = [
         ]
     },
     { label: "Partners", link: "/partners" },
-    { label: "Insights", link: "/insights" },
+    // { label: "Insights", link: "/insights" },
     { label: "About Us", link: "/about-us" }
 ];

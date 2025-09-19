@@ -268,7 +268,7 @@ const Resources = () => {
         </div>
 
         {/* Explore More Button */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <Link
             to="/insights"
             className="inline-flex items-center gap-2 border border-3 border-orange-500 group bg-white border border-[#E2E8F0] text-[#1F2937] font-open-sans text-[13px] font-normal rounded-[10px] shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] hover:bg-orange-500 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 ease-out" 
@@ -294,7 +294,7 @@ const Resources = () => {
               />
             </svg>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
