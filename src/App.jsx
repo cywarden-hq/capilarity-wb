@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
-import { Routes, Route, Outlet, useLocation } from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/Footer'
-import Home from './pages/home/Home'
-import GetInTouch from './pages/GetInTouch'
-import Observability from './pages/services/observability/Observability'
-import Soc from './pages/services/soc/Soc'
-import Devsecops from './pages/services/devsecops/Devsecops'
-import NotFound from './pages/NotFound'
+import React, { useEffect } from "react";
+import { Routes, Route, Outlet, useLocation } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/home/Home";
+import GetInTouch from "./pages/GetInTouch";
+import Observability from "./pages/services/observability/Observability";
+import Soc from "./pages/services/soc/Soc";
+import Devsecops from "./pages/services/devsecops/Devsecops";
+import NotFound from "./pages/NotFound";
+import WhyUs from "./pages/why-us/index.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -29,7 +30,6 @@ const Layout = () => {
 };
 
 function App() {
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -41,11 +41,11 @@ function App() {
           <Route path="security-operation-center" element={<Soc />} />
           <Route path="devsecops" element={<Devsecops />} />
         </Route>
-
+        <Route path="/why-us" element={<WhyUs />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
