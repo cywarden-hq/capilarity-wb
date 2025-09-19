@@ -8,6 +8,7 @@ import Observability from './pages/services/observability/Observability'
 import Soc from './pages/services/soc/Soc'
 import Devsecops from './pages/services/devsecops/Devsecops'
 import NotFound from './pages/NotFound'
+import Aboutus from './pages/aboutus/Aboutus'
 
 const Layout = () => {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="get-in-touch" element={<GetInTouch />} />
+        <Route path="about-us" element={<Aboutus />} />
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />
