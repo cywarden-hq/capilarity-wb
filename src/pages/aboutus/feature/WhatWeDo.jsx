@@ -19,7 +19,7 @@ export default function WhatWeDo() {
                         </h2>
                         
                         {/* Text content */}
-                        <div className="bg-[#edf5ff] p-20 pr-40 rounded-tr-[100px]">
+                        <div className="bg-[#edf5ff] p-20 pr-40 rounded-tr-[100px] hover:scale-102 transition-all duration-300 ease-out">
                             <div className="space-y-10 text-left text-xl text-black leading-[37px]">
                                 <p>
                                     At Capilarity, we enable enterprise-grade digital transformations across secure, compliant, and high-performing cloud environments, whether public, private, hybrid, or multi-cloud. Our end-to-end approach ensures maximum availability, efficiency and ROI, all backed by a single SLA from infrastructure to application.

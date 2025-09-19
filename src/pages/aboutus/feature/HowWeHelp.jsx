@@ -20,14 +20,14 @@ export default function HowWeHelp() {
                 </div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                     
                     {/* Card 1: Drive Growth */}
-                    <div className="bg-orange-50 pl-15 pr-10 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#FFF3EC] pl-15 pr-15 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-3xl font-semibold text-black mb-10">
                             Drive Growth
                         </h3>
-                        <p className="text-xl text-black leading-[30px] mb-6">
+                        <p className="text-2xl text-black leading-[30px] mb-6">
                             Unlock new opportunities and scale your business with confidence.
                         </p>
                         <div className="w-full h-48 rounded-lg flex items-center justify-end">
@@ -36,11 +36,11 @@ export default function HowWeHelp() {
                     </div>
 
                     {/* Card 2: Future-Proof Operations */}
-                    <div className="bg-blue-50 pl-15 pr-10 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#E4F0FF] pl-15 pr-15 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-3xl font-semibold text-black mb-10">
                             Future-Proof Operations
                         </h3>
-                        <p className="text-xl text-black leading-[30px] mb-6">
+                        <p className="text-2xl text-black leading-[30px] mb-6">
                             Build resilience and adaptability for the challenges of tomorrow.
                         </p>
                         <div className="w-full h-48 rounded-lg flex items-center justify-end">
@@ -49,11 +49,11 @@ export default function HowWeHelp() {
                     </div>
 
                     {/* Card 3: Enhance Customer Excellence */}
-                    <div className="bg-blue-50 pl-15 pr-10 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#E4F0FF] pl-15 pr-15 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-3xl font-semibold text-black mb-10">
                             Enhance Customer Excellence
                         </h3>
-                        <p className="text-xl text-black leading-[30px] mb-6">
+                        <p className="text-2xl text-black leading-[30px] mb-6">
                             Deliver seamless, reliable experiences that delight your customers.
                         </p>
                         <div className="w-full h-48 rounded-lg flex items-center justify-end">
@@ -62,11 +62,11 @@ export default function HowWeHelp() {
                     </div>
 
                     {/* Card 4: Mitigate Risk */}
-                    <div className="bg-orange-50 pl-15 pr-10 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
+                    <div className="bg-[#FFF3EC] pl-15 pr-15 pt-10 rounded-2xl hover:scale-102 transition-all duration-300 ease-out">
                         <h3 className="text-3xl font-semibold text-black mb-10">
                             Mitigate Risk
                         </h3>
-                        <p className="text-xl text-black leading-[30px] mb-6">
+                        <p className="text-2xl text-black leading-[30px] mb-6">
                             Navigate uncertainty with secure, robust, and agile solutions.
                         </p>
                         <div className="w-full h-48 rounded-lg flex items-center justify-end">
