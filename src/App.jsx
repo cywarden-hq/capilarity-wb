@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 import WhyUs from "./pages/why-us/index.jsx";
 import Aboutus from './pages/aboutus/Aboutus'
 import AiDevelopment from './pages/services/ai/AiDevelopment'
-import Partners from './pages/partners/Partners'
+import Partner from './pages/partner/Partner'
 
 const Layout = () => {
   const location = useLocation();
@@ -22,9 +22,9 @@ const Layout = () => {
   }, [location.pathname]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       <Navbar />
-      <main className="relative z-10">
+      <main className="relative z-10 overflow-x-hidden">
         <Outlet />
       </main>
       <Footer />
@@ -40,7 +40,7 @@ function App() {
         <Route path="get-in-touch" element={<GetInTouch />} />
         <Route path="about-us" element={<Aboutus />} />
         <Route path="why-us" element={<WhyUs />} />
-        <Route path="partners" element={<Partners />} />
+        <Route path="partner" element={<Partner />} />
 
         <Route path="services">
           <Route path="observability" element={<Observability />} />

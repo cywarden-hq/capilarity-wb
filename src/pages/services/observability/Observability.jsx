@@ -9,7 +9,7 @@ const Observability = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen bg-black relative overflow-hidden z-10">
+      <div className="h-[500px] lg:h-screen bg-black relative overflow-hidden z-10">
         {/* Background Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
           <Reveal animation="slideUp" duration="fast" delay={100}>
