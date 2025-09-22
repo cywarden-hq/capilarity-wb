@@ -14,7 +14,7 @@ const ScrollingBanner = () => {
     // 'overflow-hidden' is essential to hide the parts of the list that are off-screen.
     // 'group' is added to allow child elements to react to hover on this parent.
     <div className="w-full bg-white overflow-hidden">
-      <div className="pt-12 pb-24">
+      <div className="pt-12 pb-24 overflow-x-hidden">
         {/* 
           This is the container that will be animated.
           - 'flex' arranges all items in a single horizontal line.

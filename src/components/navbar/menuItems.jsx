@@ -10,7 +10,7 @@ export const menuItems = [
             { label: "DevSecOps", link: "/services/devsecops" },
         ]
     },
-    { label: "Partners", link: "/partners" },
+    { label: "Partner", link: "/partner" },
     // { label: "Insights", link: "/insights" },
     { label: "About Us", link: "/about-us" }
 ];

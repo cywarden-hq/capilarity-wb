@@ -91,7 +91,7 @@ export const OurTestimonials = () => {
       <div className="flex z-10 flex-col -mt-3 max-w-full w-[952px]">
         <header className="self-center ml-4 text-6xl font-extrabold tracking-tighter text-black max-md:max-w-full max-md:text-4xl hover:text-orange-600 transition-colors duration-300 ease-out cursor-default">
           <Reveal animation="slideUp" duration="fast" delay={100}>
-            <span className="font-semibold text-orange-500 hover:text-orange-600 transition-colors duration-300 ease-out">Testimonials</span>
+            <span className="font-semibold text-black transition-colors duration-300 ease-out">Testimonials</span>
           </Reveal>
         </header>
 
