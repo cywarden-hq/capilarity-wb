@@ -4,7 +4,8 @@ export const ANIMATION_TYPES = {
   slideUp: 'slideUp',
   slideLeft: 'slideLeft',
   slideRight: 'slideRight',
-  scaleUp: 'scaleUp'
+  scaleUp: 'scaleUp',
+  fadeIn: 'fadeIn',
 };
 
 // Animation class configurations
