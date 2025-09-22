@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="relative z-20 text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-60 py-20 sm:py-30 md:py-30 lg:py-40 xl:py-50 h-full lg:min-h-screen">
                 {/* Main Title */}
                 <Reveal animation="slideUp" delay={200} duration="normal" easing="elegant">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-9xl font-semibold mb-6 sm:mb-8 md:mb-12 lg:mb-20 xl:mb-30 text-center leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-9xl font-semibold mb-6 sm:mb-8 md:mb-15 text-center leading-tight">
                         Partners With Us
                     </h1>
                 </Reveal>
@@ -34,7 +34,7 @@ export default function Hero() {
 
                 {/* Description */}
                 <Reveal animation="slideRight" delay={600} duration="slow" easing="smooth">
-                    <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg leading-6 sm:leading-7 md:leading-8 lg:leading-8 xl:leading-[40px] text-center max-w-5xl mx-auto">
+                    <p className="text-gray-400 text-xs sm:text-xs md:text-lg lg:text-lg xl:text-lg leading-6 sm:leading-7 md:leading-8 lg:leading-8 xl:leading-[40px] text-center max-w-5xl mx-auto">
                         At Capilarity, we believe cybersecurity works best when it's a shared mission. The digital world is evolving fast, and no single organization can tackle today's threats alone. That's why we've built the Capilarity Partner Program, a community where collaboration drives stronger, smarter defenses.
                     </p>
                 </Reveal>
