@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* Title with scale up animation */}
       <section className="absolute top-[259px] left-[94px] w-[470px] h-[178px] flex items-center bg-[#04102b] overflow-hidden">
-        <Reveal animation="scaleUp" delay={1000} duration="slow" easing="spring">
+        <Reveal animation="scaleUp" delay={300} duration="slow" easing="spring">
           <h1 className="flex items-center justify-center ml-0 lg:ml-5 font-semibold text-[#fbb040] text-6xl lg:text-8xl tracking-[0] leading-[90px]">
             About Us
           </h1>

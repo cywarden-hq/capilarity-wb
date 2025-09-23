@@ -35,7 +35,7 @@ export default function GetInTouch() {
   };
 
   return (
-    <div className="min-h-screen bg-[#002857] p-3 pt-25 lg:p-20 lg:pt-40">
+    <div className="min-h-screen bg-[#002857] p-3 pt-25 lg:p-20 lg:pt-40 overflow-hidden">
       <Reveal animation="slideUp" duration="fast" delay={100}>
         <div className="bg-orange-50 rounded-2xl">
           {/* Main Content */}
@@ -204,10 +204,10 @@ export default function GetInTouch() {
                   <Reveal animation="slideRight" duration="fast" delay={300}>
                     {/* Header */}
                     <div className="space-y-4">
-                      <h1 className="text-gray-700 font-open-sans text-[30px] lg:text-[41px] font-normal leading-[58px]">
+                      <h1 className="text-gray-700 max-md:text-center font-open-sans text-[30px] lg:text-[41px] font-normal leading-[58px]">
                         Get in touch
                       </h1>
-                      <p className="text-gray-400 font-open-sans text-[15px] lg:text-[21px] font-light leading-[25px] lg:leading-[40px] max-w-[687px]">
+                      <p className="text-gray-400 font-open-sans text-[15px] mb-5 lg:text-[21px] font-light leading-[25px] lg:leading-[40px] max-w-[687px]">
                         Capilarity is a project & business management firm working on projects in the software and app verticals. In other words, we manage your project & business requirement so you can focus on building your KICKASS PRODUCT. PERIOD
                       </p>
                     </div>

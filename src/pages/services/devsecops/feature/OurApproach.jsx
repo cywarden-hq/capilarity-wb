@@ -11,7 +11,7 @@ export default function OurApproach() {
                 {/* </Reveal> */}
 
                 {/* Title */}
-                <Reveal animation="slideUp" delay={400} duration="normal" easing="elegant">
+                <Reveal animation="slideUp" delay={200} duration="normal" easing="elegant">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-12 md:mb-16 lg:mb-20 pt-12 md:pt-16 lg:pt-20 ml-8 md:ml-16 lg:ml-30">
                         Our Approach
                     </h2>
@@ -23,7 +23,7 @@ export default function OurApproach() {
                     {/* Timeline Items */}
                     <div className="space-y-12 md:space-y-16 lg:space-y-20">
                         {/* First Item */}
-                        <Reveal animation="slideRight" delay={600} duration="normal" easing="elegant">
+                        <Reveal animation="slideRight" delay={300} duration="normal" easing="elegant">
                             <div className="flex items-start gap-6 md:gap-8 lg:gap-12">
                                 {/* Circle Node */}
                                 <div className="relative z-10 flex-shrink-0">
@@ -44,7 +44,7 @@ export default function OurApproach() {
                         </Reveal>
 
                         {/* Second Item */}
-                        <Reveal animation="slideRight" delay={800} duration="normal" easing="elegant">
+                        <Reveal animation="slideRight" delay={400} duration="normal" easing="elegant">
                             <div className="flex items-start gap-6 md:gap-8 lg:gap-12">
                                 {/* Circle Node */}
                                 <div className="relative z-10 flex-shrink-0">
@@ -65,7 +65,7 @@ export default function OurApproach() {
                         </Reveal>
 
                         {/* Third Item */}
-                        <Reveal animation="slideRight" delay={1000} duration="normal" easing="elegant">
+                        <Reveal animation="slideRight" delay={500} duration="normal" easing="elegant">
                             <div className="flex items-start gap-6 md:gap-8 lg:gap-12">
                                 {/* Circle Node */}
                                 <div className="relative z-10 flex-shrink-0">

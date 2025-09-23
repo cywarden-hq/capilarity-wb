@@ -71,7 +71,11 @@ export default function ToolsTechnologies() {
                                 </div>
 
                                 {/* Tools Grid */}
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
+                                <div className={`grid gap-6 lg:gap-8 ${
+                                    category.tools.length === 3 
+                                        ? 'grid-cols-1 sm:grid-cols-3 justify-items-center' 
+                                        : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
+                                }`}>
                                     {category.tools.map((tool, toolIndex) => (
                                         <Reveal
                                             key={toolIndex}

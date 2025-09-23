@@ -3,7 +3,7 @@ import Reveal from '../../../../components/Reveal'
 
 export default function CompetitiveEdge() {
     return (
-        <div className="min-h-screen bg-white py-16 md:py-24 lg:py-50 px-4 md:px-8 lg:px-20 xl:px-40 relative">
+        <div className="min-h-screen bg-white py-16 md:py-24 lg:py-50 px-4 md:px-8 lg:px-20 xl:px-40 relative overflow-hidden">
             {/* Background Image - Hidden on mobile, visible on desktop */}
             <Reveal animation="fadeIn" delay={200} duration="slow" easing="smooth">
                 <img
@@ -55,7 +55,7 @@ export default function CompetitiveEdge() {
                         </Reveal>
 
                         {/* Third Paragraph */}
-                        <Reveal animation="slideLeft" delay={700} duration="normal" easing="elegant">
+                        <Reveal animation="slideLeft" delay={500} duration="normal" easing="elegant">
                             <div className="relative lg:ml-[50%]">
                                 <div className="pl-4 md:pl-6 lg:pl-8 py-4 md:py-5 lg:py-6 rounded-lg lg:rounded-none"
                                     style={{

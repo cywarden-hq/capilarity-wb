@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="relative z-20 text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-60 py-30 md:py-40 lg:py-50 h-full lg:min-h-screen">
                 {/* Main Title */}
                 <Reveal animation="slideUp" delay={200} duration="normal" easing="elegant">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-9xl font-semibold mb-6 sm:mb-8 md:mb-12 lg:mb-20 xl:mb-30 text-center leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-9xl font-semibold mb-6 sm:mb-8 md:mb-10 text-center leading-tight">
                         Partner With Us
                     </h1>
                 </Reveal>

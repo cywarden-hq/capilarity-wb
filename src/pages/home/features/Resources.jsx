@@ -215,14 +215,10 @@ const Resources = () => {
               <Reveal key={filter} animation="slideRight" duration="fast" delay={300}>
                 <button
                   onClick={() => setActiveFilter(filter)}
-                  className={`font-open-sans text-[14px] font-normal rounded-[10px] shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] transition-all duration-300 ease-out hover:scale-105 ${activeFilter === filter
-                    ? "text-white"
+                  className={`font-open-sans text-[14px] font-normal px-4 py-2 rounded-[10px] shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] transition-all duration-300 ease-out hover:scale-105 ${activeFilter === filter
+                    ? "text-white bg-[#FE8032]"
                     : "bg-white border border-[#E2E8F0] text-[#1F2937] hover:bg-orange-50 hover:border-orange-200"
                     }`} 
-                  style={{
-                    ...(activeFilter === filter ? { backgroundColor: "#FE8032" } : {}),
-                    padding: "8px 16px",
-                  }}
                 >
                   {filter}
                 </button>
@@ -236,28 +232,32 @@ const Resources = () => {
           {resources[activeFilter].map((resource) => (
             <Reveal key={resource.id} animation="slideLeft" duration="fast" delay={400}>
               <div
-                className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] min-h-[267px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(49,130,237,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer p-[25px]">
+                tabIndex={0}
+                className="group bg-white cursor-pointer p-[25px] border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] min-h-[267px] flex flex-col 
+                hover:shadow-[0_8px_25px_-5px_rgba(49,130,237,0.15)] hover:scale-[1.02] hover:border-orange-200 transition-all duration-300 ease-out
+                focus:shadow-[0_8px_25px_-5px_rgba(49,130,237,0.15)] focus:scale-[1.02] focus:border-orange-200 transition-all duration-300 ease-out"
+              >
 
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="group-hover:scale-110 transition-transform duration-300 ease-out">
+                  <div className="group-hover:scale-110 group-focus:scale-110 transition-transform duration-300 ease-out">
                     {getIcon(resource.icon)}
                   </div>
-                  <span className="text-[#FE8032] font-open-sans text-[13px] font-normal group-hover:text-orange-600 transition-colors duration-300">
+                  <span className="text-[#FE8032] font-open-sans text-[13px] font-normal group-hover:text-orange-600 group-focus:text-orange-600 transition-colors duration-300">
                     {resource.type}
                   </span>
                 </div>
 
-                <h3 className="text-[#1F2937] font-open-sans text-[20px] font-bold leading-[25px] mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                <h3 className="text-[#1F2937] font-open-sans text-[20px] font-bold leading-[25px] mb-4 group-hover:text-orange-600 group-focus:text-orange-600 transition-colors duration-300">
                   {resource.title}
                 </h3>
 
-                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 transition-colors duration-300">
+                <p className="text-[#64748B] font-open-sans text-[15px] font-normal leading-[26px] mb-6 flex-grow group-hover:text-gray-600 group-focus:text-gray-600 transition-colors duration-300">
                   {resource.description}
                 </p>
 
-                <div className="flex items-center justify-between border-t border-[#E2E8F0] group-hover:border-orange-200 transition-colors duration-300 pt-[14px] mt-auto">
-                  <div className="flex items-center justify-center rounded-full px-2 py-1 bg-[#F1F5F9] border border-orange-500 group-hover:bg-orange-500 transition-colors duration-300">
-                    <span className="text-orange-500 font-open-sans text-[11px] font-normal group-hover:text-white transition-colors duration-300">
+                <div className="flex items-center justify-between border-t border-[#E2E8F0] group-hover:border-orange-200 group-focus:border-orange-200 transition-colors duration-300 pt-[14px] mt-auto">
+                  <div className="flex items-center justify-center rounded-full px-2 py-1 bg-[#F1F5F9] border border-orange-500 group-hover:bg-orange-500 group-focus:bg-orange-500 transition-colors duration-300">
+                    <span className="text-orange-500 font-open-sans text-[11px] font-normal group-hover:text-white group-focus:text-white transition-colors duration-300">
                       {resource.category}
                     </span>
                   </div>
@@ -268,7 +268,7 @@ const Resources = () => {
         </div>
 
         {/* Explore More Button */}
-        {/* <div className="text-center">
+        <div className="text-center">
           <Link
             to="/insights"
             className="inline-flex items-center gap-2 border border-3 border-orange-500 group bg-white border border-[#E2E8F0] text-[#1F2937] font-open-sans text-[13px] font-normal rounded-[10px] shadow-[0_2px_8px_-2px_rgba(49,130,237,0.10)] hover:bg-orange-500 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 transition-all duration-300 ease-out" 
@@ -294,7 +294,7 @@ const Resources = () => {
               />
             </svg>
           </Link>
-        </div> */}
+        </div>
       </div>
     </section>
   );
