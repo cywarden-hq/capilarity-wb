@@ -48,7 +48,6 @@ export default function WhatWeDo() {
                         <img
                             src="/images/aboutus/whatwedo.svg"
                             alt="What We Do"
-                            className=""
                         />
                     </div>
                 </div>

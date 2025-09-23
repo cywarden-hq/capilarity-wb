@@ -7,25 +7,25 @@ import line9 from "/images/soc/line-9.svg";
 
 export default function Hero() {
   return (
-    <main className="w-full h-[600px] sm:h-[700px] md:h-[800px] lg:h-[1000px] overflow-hidden">
+    <main className="w-full bg-white h-[500px] sm:h-[600px] md:h-[700px] lg:h-[790px] overflow-visible pb-20">
       <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[851px]">
         {/* Background decorative ellipse - hidden on mobile, visible on larger screens */}
-        <img
+        {/* <img
           className="absolute w-full h-[150px] lg:h-[484px] top-[400px] lg:top-[500px]"
           alt="Background decorative ellipse"
           src={ellipse9}
           role="presentation"
-        />
+        /> */}
         
         {/* Background top image - responsive sizing */}
         <img
-          className="absolute w-full h-full inset-0 z-10 object-cover"
+          className="absolute w-full h-[80%] inset-0 z-10 object-cover"
           src="/images/soc/hero_bg_top.svg"
           alt="Background decorative top"
           role="presentation"
         />
 
-        <header className="absolute w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[790px] top-0 left-0 bg-black">
+        <header className="absolute w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[750px] top-0 left-0 bg-black [clip-path:ellipse(100%_100%_at_50%_0%)] drop-shadow-[4px_4px_40px_14px_rgba(254,128,50,0.71)]">
           <h1
             className="absolute w-full top-[150px] lg:top-[100px] left-[20px] sm:top-[50px] sm:left-[30px] md:top-[60px] md:left-[50px] lg:top-[87px] lg:left-[125px] text-transparent text-[40px] sm:text-[60px] md:text-[80px] lg:text-[120px] xl:text-[150px] leading-tight px-4 sm:px-6 md:px-8 lg:px-0"
           >
@@ -46,11 +46,9 @@ export default function Hero() {
             src={line9}
             role="presentation"
           />
-        </header>
-
         {/* Side decorative ellipses - responsive sizing and positioning */}
         <img
-          className="absolute w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] lg:w-[631px] lg:h-[751px] top-0 right-0 opacity-40 sm:opacity-60 lg:opacity-100"
+          className="absolute w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px] lg:w-[631px] lg:h-[700px] top-0 right-0 opacity-40 sm:opacity-60 lg:opacity-100"
           alt="Side decorative ellipse"
           src={ellipse1}
           role="presentation"
@@ -62,6 +60,8 @@ export default function Hero() {
           src={ellipse2}
           role="presentation"
         />
+        </header>
+
         
       </section>
     </main>

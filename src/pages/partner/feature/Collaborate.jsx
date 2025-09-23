@@ -6,7 +6,7 @@ export default function Collaborate() {
         <div className="relative min-h-screen bg-white px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 overflow-hidden">
             {/* Background Image */}
             <img
-                src="/images/partners/collaborate.svg"
+                src="/images/partner/collaborate.svg"
                 alt="Collaborate Background"
                 className="absolute inset-0 w-full h-full object-cover"
             />

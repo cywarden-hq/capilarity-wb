@@ -43,8 +43,8 @@ export default function Navbar() {
     return (
         <>
             <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-[74px] transition-all duration-1000 ease-in-out ${isScrolled
-                    ? 'bg-black shadow-lg backdrop-blur-sm py-[2px]'
-                    : 'bg-transparent py-[15px]'
+                ? 'bg-black shadow-lg backdrop-blur-sm py-[2px]'
+                : 'bg-transparent py-[15px]'
                 }`}>
                 {/* Logo */}
                 <Link to="/">
@@ -57,7 +57,7 @@ export default function Navbar() {
                     </div>
                 </Link>
                 {/* Navigation Menu */}
-                <div className="hidden md:flex">
+                <div className="hidden lg:flex">
                     <div className="flex gap-4 md:gap-6 lg:gap-[13px] bg-gray-900/10 shadow-xl backdrop-blur-sm rounded-2xl px-4 md:px-6 lg:px-[20px] py-2 md:py-3 lg:py-[12px]">
                         {menuItems.map((item, index) => (
                             <div key={index} className="relative">
@@ -116,15 +116,15 @@ export default function Navbar() {
                 <div className="flex">
                     <Link
                         to="/get-in-touch"
-                        className="hidden md:flex group items-center justify-center px-4 md:px-6 lg:px-8 py-[6px] md:py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
-                        <span className="text-white text-sm md:text-base font-bold leading-[150%] transition-colors duration-300">
+                        className="hidden lg:flex group items-center justify-center px-10 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
+                        <span className="text-white text-base font-bold leading-[150%] transition-colors duration-300">
                             Get Started
                         </span>
                     </Link>
 
                     {/* Mobile menu button */}
                     <button
-                        className="md:hidden transition-colors duration-300 text-white"
+                        className="lg:hidden transition-colors duration-300 text-white"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? (

@@ -112,6 +112,7 @@ const OurServices = () => {
                                 </div>
                             </Link>
                         </Reveal>
+
                         {/* AI Development Card */}
                         <Reveal animation="slideLeft" duration="fast" delay={400}>
                             <Link to="/services/ai-development">
@@ -134,9 +135,9 @@ const OurServices = () => {
                             </Link>
                         </Reveal>
 
-                        {/* Managed DevOps Card */}
+                        {/* Managed Devops Card */}
                         <Reveal animation="slideRight" duration="fast" delay={500}>
-                            <Link to="/services/managed-devops">
+                            <Link to="/services/security-operation-center">
                                 <div className="group bg-white border border-[#E2E8F0] rounded-xl shadow-[0_2px_8px_-2px_rgba(254,128,50,0.10)] p-8 h-[338px] flex flex-col hover:shadow-[0_8px_25px_-5px_rgba(254,128,50,0.15)] hover:animate-scale-pop hover:border-orange-200 transition-all duration-300 ease-out cursor-pointer">
                                     <div className="flex items-center justify-center w-16 h-16 rounded-xl mb-6 bg-orange-50 group-hover:bg-orange-100 group-hover:scale-110 transition-all duration-300 ease-out">
                                         <div className="group-hover:rotate-12 transition-transform duration-300 ease-out">

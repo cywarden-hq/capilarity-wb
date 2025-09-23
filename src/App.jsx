@@ -41,7 +41,7 @@ function App() {
         <Route path="about-us" element={<Aboutus />} />
         <Route path="why-us" element={<WhyUs />} />
         <Route path="partner" element={<Partner />} />
-
+        
         <Route path="services">
           <Route path="observability" element={<Observability />} />
           <Route path="ai-development" element={<AiDevelopment />} />

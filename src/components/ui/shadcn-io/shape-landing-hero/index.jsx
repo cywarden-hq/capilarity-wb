@@ -257,7 +257,7 @@ export function HeroGeometric({
               <div className="flex flex-col sm:flex-row sm:gap-6 gap-4 justify-center items-center max-w-md mx-auto">
                 <Link
                   to="/get-in-touch"
-                  className="flex group items-center justify-center px-8 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
+                  className="flex group items-center justify-center px-10 py-[8px] bg-orange-500 hover:bg-orange-400 rounded-full hover:scale-105 border-2 border-orange-500 hover:border-orange-400 transition-all duration-300 ease-out">
                   <span className="text-white text-base font-bold leading-[150%] transition-colors duration-300">
                     Get Started
                   </span>

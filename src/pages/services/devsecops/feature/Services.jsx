@@ -17,14 +17,14 @@ export default function Services() {
 
                     {/* Left side - Image */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-                        <Reveal animation="slideRight" delay={400} duration="normal" easing="elegant">
+                        <Reveal animation="slideRight" delay={200} duration="normal" easing="elegant">
                             <img src="/images/devsecops/services.svg" alt="DevSecOps Services" className="w-full max-w-md lg:max-w-none h-auto" />
                         </Reveal>
                     </div>
 
                     {/* Right side - Content cards */}
                     <div className="flex-1 flex flex-col gap-6 md:gap-8 lg:gap-10">
-                        <Reveal animation="slideLeft" delay={600} duration="normal" easing="elegant">
+                        <Reveal animation="slideLeft" delay={300} duration="normal" easing="elegant">
                             <div className="bg-white rounded-2xl px-6 md:px-10 lg:px-15 py-4 md:py-5 hover:scale-105 hover:-translate-x-2 transition-all duration-300">
                                 <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-text-gray font-normal m-0">
                                     Compliance and monitoring happen continuously delivering audit ready reports and real, time protection without slowing down delivery.
@@ -32,7 +32,7 @@ export default function Services() {
                             </div>
                         </Reveal>
 
-                        <Reveal animation="slideLeft" delay={800} duration="normal" easing="elegant">
+                        <Reveal animation="slideLeft" delay={400} duration="normal" easing="elegant">
                             <div className="bg-white rounded-2xl px-6 md:px-10 lg:px-15 py-4 md:py-5 hover:scale-105 hover:-translate-x-2 transition-all duration-300">
                                 <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-text-gray font-normal m-0">
                                     Secrets stay protected in encrypted vaults, while streamlined operations cut unnecessary tool costs and keep security spend under control.
@@ -40,7 +40,7 @@ export default function Services() {
                             </div>
                         </Reveal>
 
-                        <Reveal animation="slideLeft" delay={1000} duration="normal" easing="elegant">
+                        <Reveal animation="slideLeft" delay={500} duration="normal" easing="elegant">
                             <div className="bg-white rounded-2xl px-6 md:px-10 lg:px-15 py-4 md:py-5 hover:scale-105 hover:-translate-x-2 transition-all duration-300">
                                 <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-text-gray font-normal m-0">
                                     Security is built into the pipeline from the start, with code scans, dependency checks, and container security running automatically as you deploy.

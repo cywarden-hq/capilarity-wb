@@ -10,7 +10,7 @@ export default function Partnership() {
                     {/* Left Section - Title */}
                     <div className="w-full lg:w-2/5">
                         <Reveal animation="slideUp" delay={200} duration="normal" easing="elegant">
-                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-black leading-tight">
+                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold max-lg:text-center text-black leading-tight">
                                 Who We<br /> Partner With
                             </h2>
                         </Reveal>
@@ -74,7 +74,7 @@ export default function Partnership() {
                 <div className="w-full md:w-[40%] lg:w-[40%] flex flex-col justify-end md:flex-row lg:flex-row gap-4 sm:gap-8 md:gap-8 lg:gap-20 xl:gap-30 p-6 sm:p-8 md:p-0 lg:p-0">
                     <Reveal animation="slideRight" delay={600} duration="normal" easing="elegant">
                         <img 
-                            src="/images/partners/value.svg"
+                            src="/images/partner/value.svg"
                             alt="Partnership"
                             className="w-full h-full object-cover"
                         />

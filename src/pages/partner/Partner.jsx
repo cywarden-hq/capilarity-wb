@@ -4,7 +4,7 @@ import WhyPartner from './feature/WhyPartner'
 import Partnership from './feature/Partnership'
 import Collaborate from './feature/Collaborate'
 
-export default function Partners() {
+export default function Partner() {
     return (
         <>
             <Hero />

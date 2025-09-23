@@ -18,8 +18,8 @@ export default function WhyPartner() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
 
                     {/* Card 1: Shared Growth */}
-                    <Reveal animation="slideLeft" delay={400} duration="normal" easing="smooth">
-                        <div className="relative overflow-hidden group hover:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
+                    <Reveal animation="slideLeft" delay={300} duration="normal" easing="smooth">
+                        <div tabIndex={0} className="relative overflow-hidden group hover:scale-105 focus:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
                             <div className="absolute inset-0 bg-black/60 z-10 group-hover:bg-black/50 transition-all duration-300"></div>
                             <div className="relative z-20 p-4 sm:p-6 md:p-6 lg:p-6 xl:p-8 w-full h-[350px] sm:h-[400px] md:h-[420px] lg:h-[420px] xl:h-[450px] flex flex-col justify-start">
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-regular text-white mb-3 sm:mb-4 leading-tight">
@@ -31,14 +31,14 @@ export default function WhyPartner() {
                                 </p>
                             </div>
                             <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                                <img src="/images/partners/partner1.svg" className="w-full h-full object-cover" alt="Shared Growth" />
+                                <img src="/images/partner/partner1.svg" className="w-full h-full object-cover" alt="Shared Growth" />
                             </div>
                         </div>
                     </Reveal>
 
                     {/* Card 2: Resilience at Scale */}
-                    <Reveal animation="slideUp" delay={600} duration="normal" easing="smooth">
-                        <div className="relative overflow-hidden group hover:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
+                    <Reveal animation="slideUp" delay={400} duration="normal" easing="smooth">
+                        <div tabIndex={0} className="relative overflow-hidden group hover:scale-105 focus:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
                             <div className="absolute inset-0 bg-black/60 z-10 group-hover:bg-black/50 transition-all duration-300"></div>
                             <div className="relative z-20 p-4 sm:p-6 md:p-6 lg:p-6 xl:p-8 w-full h-[350px] sm:h-[400px] md:h-[420px] lg:h-[420px] xl:h-[450px] flex flex-col justify-start">
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-regular text-white mb-3 sm:mb-4 leading-tight">
@@ -50,14 +50,14 @@ export default function WhyPartner() {
                                 </p>
                             </div>
                             <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                                <img src="/images/partners/partner2.svg" className="w-full h-full object-cover" alt="Resilience at Scale" />
+                                <img src="/images/partner/partner2.svg" className="w-full h-full object-cover" alt="Resilience at Scale" />
                             </div>
                         </div>
                     </Reveal>
 
                     {/* Card 3: Trusted Expertise */}
-                    <Reveal animation="slideRight" delay={800} duration="normal" easing="smooth">
-                        <div className="relative overflow-hidden group hover:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
+                    <Reveal animation="slideRight" delay={500} duration="normal" easing="smooth">
+                        <div tabIndex={0} className="relative overflow-hidden group hover:scale-105 focus:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
                             <div className="absolute inset-0 bg-black/60 z-10 group-hover:bg-black/50 transition-all duration-300"></div>
                             <div className="relative z-20 p-4 sm:p-6 md:p-6 lg:p-6 xl:p-8 w-full h-[350px] sm:h-[400px] md:h-[420px] lg:h-[420px] xl:h-[450px] flex flex-col justify-start">
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-regular text-white mb-3 sm:mb-4 leading-tight">
@@ -69,14 +69,14 @@ export default function WhyPartner() {
                                 </p>
                             </div>
                             <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                                <img src="/images/partners/partner3.svg" className="w-full h-full object-cover" alt="Trusted Expertise" />
+                                <img src="/images/partner/partner3.svg" className="w-full h-full object-cover" alt="Trusted Expertise" />
                             </div>
                         </div>
                     </Reveal>
 
                     {/* Card 4: Seamless Collaboration */}
-                    <Reveal animation="slideLeft" delay={1000} duration="normal" easing="smooth">
-                        <div className="relative overflow-hidden group hover:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
+                    <Reveal animation="slideLeft" delay={600} duration="normal" easing="smooth">
+                        <div tabIndex={0} className="relative overflow-hidden group hover:scale-105 focus:scale-105 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl">
                             <div className="absolute inset-0 bg-black/60 z-10 group-hover:bg-black/50 transition-all duration-300"></div>
                             <div className="relative z-20 p-4 sm:p-6 md:p-6 lg:p-6 xl:p-8 w-full h-[350px] sm:h-[400px] md:h-[420px] lg:h-[420px] xl:h-[450px] flex flex-col justify-start">
                                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-regular text-white mb-3 sm:mb-4 leading-tight">
@@ -88,7 +88,7 @@ export default function WhyPartner() {
                                 </p>
                             </div>
                             <div className="absolute inset-0 bg-gray-300 flex items-center justify-center">
-                                <img src="/images/partners/partner4.svg" className="w-full h-full object-cover" alt="Seamless Collaboration" />
+                                <img src="/images/partner/partner4.svg" className="w-full h-full object-cover" alt="Seamless Collaboration" />
                             </div>
                         </div>
                     </Reveal>

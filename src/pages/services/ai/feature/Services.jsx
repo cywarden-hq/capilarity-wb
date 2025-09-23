@@ -1,24 +1,29 @@
 import React from 'react'
 import AlternatingCard from './AlternatingCard'
+import Reveal from '../../../../components/Reveal'
 
 export default function Services() {
     return (
-        <div className="min-h-screen bg-white py-20 px-20">
+        <div className="min-h-screen bg-white py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
-                <div className="flex flex-col gap-10 items-center justify-center mb-20">
-                    <h1 className="text-6xl font-normal text-black leading-tight max-w-5xl text-center leading-[65px]">
-                        AI Development Services, Shaped Around Your Business
-                    </h1>
-                    <p className="text-lg font-normal text-black px-40 w-full text-center leading-[46px]">
-                        Every business is unique, and your AI should be too. We offer a full suite of AI development services built to deliver real results. Whether it's automating time, consuming tasks or uncovering breakthrough insights, our team brings both deep technical expertise and real, world experience to make it all happen.
-                    </p>
+                <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 items-center justify-center mb-12 sm:mb-16 md:mb-20">
+                    <Reveal animation="fadeIn" duration="normal" delay={100}>
+                        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-normal text-black leading-tight max-w-6xl text-center leading-[1.2] sm:leading-[1.3] md:leading-[1.4] lg:leading-[1.1] px-2">
+                            AI Development Services, Shaped Around Your Business
+                        </h1>
+                    </Reveal>
+                    <Reveal animation="slideUp" duration="normal" delay={200}>
+                        <p className="text-xs sm:text-lg font-normal text-black px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 w-full text-center leading-relaxed sm:leading-loose md:leading-[2rem] lg:leading-[2.5rem]">
+                            Every business is unique, and your AI should be too. We offer a full suite of AI development services built to deliver real results. Whether it's automating time, consuming tasks or uncovering breakthrough insights, our team brings both deep technical expertise and real, world experience to make it all happen.
+                        </p>
+                    </Reveal>
                 </div>
 
                 {/* 3x2 Grid Layout */}
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col gap-8 sm:gap-10 md:gap-12">
 
-                    <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12">
                         {/* Row 1 - Left: Custom AI Tools */}
                         <AlternatingCard
                             type="content"
@@ -41,7 +46,7 @@ export default function Services() {
 
 
                     {/* Row 2 - Left: Generative AI Development */}
-                    <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12">
                         <AlternatingCard
                             type="card"
                             title="Generative AI Development"
@@ -61,7 +66,7 @@ export default function Services() {
                     </div>
 
                     {/* Row 3 - Left: Automation */}
-                    <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12">
                         <AlternatingCard
                             type="content"
                             title="Free up your team to focus on high, impact work by letting AI handle the repetitive tasks."
@@ -78,7 +83,7 @@ export default function Services() {
                     </div>
 
                     {/* Row 4 - Left: Predictive Modelling & Forecasting */}
-                    <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12">
                         <AlternatingCard
                             type="card"
                             title="Predictive Modelling & Forecasting"
