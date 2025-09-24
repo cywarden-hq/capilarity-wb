@@ -12,6 +12,7 @@ import WhyUs from "./pages/why-us/index.jsx";
 import Aboutus from './pages/aboutus/Aboutus'
 import AiDevelopment from './pages/services/ai/AiDevelopment'
 import Partner from './pages/partner/Partner'
+import Insights from './pages/insights/Insights'
 
 const Layout = () => {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
         <Route path="about-us" element={<Aboutus />} />
         <Route path="why-us" element={<WhyUs />} />
         <Route path="partner" element={<Partner />} />
+        <Route path="insights" element={<Insights />} />
         
         <Route path="services">
           <Route path="observability" element={<Observability />} />
