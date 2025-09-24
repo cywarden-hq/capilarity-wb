@@ -69,7 +69,7 @@ const CapilarityCardsLayout = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Grid container with custom grid areas */}
                 <Reveal animation="slideUp" duration="slow" delay={200}>
-                <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-6 lg:grid-rows-4 gap-4 lg:h-screen lg:max-h-[800px]">
+                <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:grid-rows-4 gap-4 lg:h-screen lg:max-h-[800px]">
 
                     {/* Card 1 - Threat Detection (Top Left) */}
                     {visibleCards.includes(1) && (
