@@ -11,7 +11,7 @@ function FilterButtons({ activeFilter, setActiveFilter }) {
     ];
 
     return (
-        <nav className="flex flex-auto gap-3 items-center max-md:max-w-full">
+        <nav className="flex flex-auto gap-3 items-center justify-center max-md:max-w-full">
             {filterOptions.map((option) => (
                 <button
                     key={option.label}
@@ -49,20 +49,8 @@ const CapilarityCardsLayout = () => {
     const visibleCards = getVisibleCards();
 
     return (
-        <div className="flex flex-col gap-10 lg:gap-20 justify-center items-center mx-4 md:mx-8 lg:mx-20 py-10 lg:py-20 min-h-screen lg:border-2 lg:border-black rounded-3xl">
-            <header className="flex flex-wrap gap-8 self-center w-full text-sm text-center text-gray-800 max-w-[1076px] max-md:max-w-full">
-                <section className="flex overflow-hidden flex-wrap flex-auto gap-4 px-2.5 py-2 leading-loose bg-white rounded-xl border border-solid shadow-sm border-neutral-200">
-                    <img
-                        src="https://api.builder.io/api/v1/image/assets/TEMP/5a75387290f64cee6b1d0318108c69b8ae5d6544?placeholderIfAbsent=true&apiKey=9de1037908bf4a2c99095ce346491382"
-                        alt="Search icon"
-                        className="object-contain shrink-0 aspect-[3] w-[26px]"
-                    />
-                    <input
-                        type="search"
-                        placeholder="Search Articles...."
-                        className="flex-auto my-auto max-md:max-w-full bg-transparent border-none outline-none text-sm text-gray-800"
-                    />
-                </section>
+        <div className="flex flex-col gap-10 lg:gap-20 justify-center items-center mx-4 md:mx-8 lg:mx-20 py-10 lg:py-20 min-h-screen xl:border-2 xl:border-black rounded-3xl">
+            <header className="flex flex-wrap gap-8 justify-center items-center w-full text-sm text-center text-gray-800 max-w-[1076px] max-md:max-w-full">
                 <FilterButtons activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
             </header>
 
@@ -121,7 +109,7 @@ const CapilarityCardsLayout = () => {
                             <img
                                 src="/images/insights/ai_agents.svg"
                                 alt="AI agents logo"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                             />
                         </div>
                     </div>
