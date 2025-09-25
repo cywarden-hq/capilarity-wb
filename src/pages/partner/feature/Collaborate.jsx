@@ -1,5 +1,6 @@
 import React from 'react'
 import Reveal from '../../../components/Reveal'
+import { Link } from 'react-router'
 
 export default function Collaborate() {
     return (
@@ -10,7 +11,7 @@ export default function Collaborate() {
                 alt="Collaborate Background"
                 className="absolute inset-0 w-full h-full object-cover"
             />
-            
+
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center py-16 sm:py-20">
                 <Reveal animation="slideUp" delay={200} duration="normal" easing="elegant">
@@ -24,10 +25,12 @@ export default function Collaborate() {
                     </p>
                 </Reveal>
                 <Reveal animation="scaleUp" delay={600} duration="normal" easing="elegant">
-                    <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 hover:border-blue-700 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 group relative overflow-hidden">
-                        <span className="relative z-10">Get In Touch</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </button>
+                    <Link to="/get-in-touch">
+                        <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold border-2 border-blue-600 hover:bg-blue-600 hover:text-white hover:scale-105 hover:border-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 group relative overflow-hidden">
+                            <span className="relative z-10">Get In Touch</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </button>
+                    </Link>
                 </Reveal>
             </div>
         </div>
