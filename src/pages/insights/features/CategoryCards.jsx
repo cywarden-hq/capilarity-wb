@@ -69,7 +69,7 @@ const CategoryCard = ({ card }) => {
             <div className={`${card.leftSideClassName} ${card.image ? 'w-3/5' : 'w-full'} p-6 flex flex-col gap-5`}>
                 {/* Category Label */}
                 <div className="flex justify-start">
-                    <span className={`${card.categoryColor} px-3 py-1 rounded-full text-sm font-medium`}>
+                    <span className={`${card.categoryColor} px-3 py-1 rounded-full text-xs md:text-sm font-medium`}>
                         {card.type}
                     </span>
                 </div>
@@ -77,7 +77,7 @@ const CategoryCard = ({ card }) => {
                 {/* Text Content - Only description */}
                 <div className="text-left">
                     <h3 
-                        className={`${card.textColor} text-xl font-bold leading-tight text-left`}
+                        className={`${card.textColor} text-base md:text-lg lg:text-xl font-bold leading-tight text-left`}
                         dangerouslySetInnerHTML={{ __html: card.description }}
                     />
                 </div>
@@ -102,9 +102,9 @@ const CategoryCards = ({ activeFilter }) => {
     const cards = categoryData[activeFilter] || [];
 
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl px-4 md:px-8 lg:px-20 mx-auto">
             <Reveal animation="slideUp" duration="slow" delay={200}>
-                <div className="flex gap-10">
+                <div className="flex flex-wrap gap-10">
                     {cards.map((card) => (
                         <CategoryCard key={card.id} card={card} />
                     ))}

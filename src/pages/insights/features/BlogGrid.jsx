@@ -12,7 +12,7 @@ function FilterButtons({ activeFilter, setActiveFilter }) {
     ];
 
     return (
-        <nav className="flex flex-auto gap-3 items-center justify-center max-md:max-w-full">
+        <nav className="flex flex-auto gap-3 px-2 md:px-8 lg:px-20 items-center justify-center max-md:max-w-full">
             {filterOptions.map((option) => (
                 <button
                     key={option.label}
@@ -33,7 +33,7 @@ const CapilarityCardsLayout = () => {
     const [activeFilter, setActiveFilter] = React.useState("All");
 
     return (
-        <div className="bg-black/10 flex flex-col gap-10 lg:gap-20 items-center mx-4 md:mx-8 lg:mx-20 py-10 lg:py-20 min-h-screen xl:border-2 xl:border-black rounded-3xl">
+        <div className="bg-black/10 flex flex-col gap-10 lg:gap-20 items-center mx-2 md:mx-8 lg:mx-20 py-10 lg:py-20 min-h-screen xl:border-2 xl:border-black rounded-3xl">
             <header className="flex flex-wrap gap-8 justify-center w-full text-sm text-center text-gray-800 max-w-[1076px] max-md:max-w-full">
                 <FilterButtons activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
             </header>
