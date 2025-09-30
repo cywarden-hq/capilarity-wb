@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Reveal from '../../../components/Reveal';
 import CategoryCards from './CategoryCards';
 
@@ -31,6 +32,12 @@ function FilterButtons({ activeFilter, setActiveFilter }) {
 
 const CapilarityCardsLayout = () => {
     const [activeFilter, setActiveFilter] = React.useState("All");
+    const navigate = useNavigate();
+
+    // Grid card click handlers
+    const handleCardClick = (blogPostId) => {
+        navigate(`/insights/post/${blogPostId}`);
+    };
 
     return (
         <div className="bg-black/10 flex flex-col gap-10 lg:gap-20 items-center mx-2 md:mx-8 lg:mx-20 py-10 lg:py-20 min-h-screen xl:border-2 xl:border-black rounded-3xl">
@@ -48,7 +55,10 @@ const CapilarityCardsLayout = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-1 lg:grid-rows-4 gap-4 lg:h-screen lg:max-h-[800px]">
 
                         {/* Card 1 - Threat Detection (Top Left) */}
-                        <div className="col-span-1 lg:row-span-3 bg-stone-950 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-6 lg:py-10 text-white relative overflow-hidden flex flex-col text-center hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[300px] lg:min-h-0">
+                        <div 
+                            className="col-span-1 lg:row-span-3 bg-stone-950 rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-6 lg:py-10 text-white relative overflow-hidden flex flex-col text-center hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[300px] lg:min-h-0"
+                            onClick={() => handleCardClick('threat-detection-optimization')}
+                        >
                             {/* Glowing orange effect at top left */}
                             <div className="absolute -top-20 -left-20 w-70 h-70 bg-gradient-to-br from-orange-500/30 to-transparent rounded-full blur-2xl"></div>
                             <div className="absolute -top-20 -left-20 w-70 h-70 bg-gradient-to-br from-orange-400/50 to-transparent rounded-full blur-2xl"></div>
@@ -74,7 +84,10 @@ const CapilarityCardsLayout = () => {
                         </div>
 
                         {/* Card 2 - AI Agents Manufacturing (Top Right) */}
-                        <div className="col-span-1 lg:col-span-2 lg:row-span-2 bg-gradient-to-tr from-[#FFB039] via-[#FF6F00] to-[#FFB039] rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-6 lg:py-8 text-white relative overflow-hidden flex flex-col lg:flex-row hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[300px] lg:min-h-0">
+                        <div 
+                            className="col-span-1 lg:col-span-2 lg:row-span-2 bg-gradient-to-tr from-[#FFB039] via-[#FF6F00] to-[#FFB039] rounded-2xl lg:rounded-3xl px-4 lg:px-8 py-6 lg:py-8 text-white relative overflow-hidden flex flex-col lg:flex-row hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[300px] lg:min-h-0"
+                            onClick={() => handleCardClick('ai-agents-manufacturing')}
+                        >
                             <div className="flex flex-col justify-around w-full lg:w-[60%]">
                                 <img
                                     src="https://api.builder.io/api/v1/image/assets/TEMP/c45eaa5b6d767e0e7b79eb9332236e8aff079206?placeholderIfAbsent=true&apiKey=9de1037908bf4a2c99095ce346491382"
@@ -100,7 +113,10 @@ const CapilarityCardsLayout = () => {
                         </div>
 
                         {/* Card 3 - CSPM (Bottom Center) */}
-                        <div className="col-span-1 lg:row-span-2 bg-[#edf3ff] rounded-2xl p-4 lg:p-6 text-gray-800 relative flex flex-col hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[250px] lg:min-h-0">
+                        <div 
+                            className="col-span-1 lg:row-span-2 bg-[#edf3ff] rounded-2xl p-4 lg:p-6 text-gray-800 relative flex flex-col hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[250px] lg:min-h-0"
+                            onClick={() => handleCardClick('cspm-compliance-security')}
+                        >
                             <h3 className="font-bold text-lg lg:text-2xl text-gray-900 mb-3 lg:mb-4">
                                 <span className="text-blue-700">CSPM</span> in Ensuring<br />
                                 Compliance and<br />
@@ -116,7 +132,10 @@ const CapilarityCardsLayout = () => {
                         </div>
 
                         {/* Card 4 - Healthcare Services (Right) */}
-                        <div className="relative overflow-hidden bg-gradient-to-r from-[#ebf1fc] to-[#dce5f5] rounded-2xl text-gray-800 hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0">
+                        <div 
+                            className="relative overflow-hidden bg-gradient-to-r from-[#ebf1fc] to-[#dce5f5] rounded-2xl text-gray-800 hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0"
+                            onClick={() => handleCardClick('healthcare-ai-agents')}
+                        >
                             <img
                                 src="/images/insights/ai_agents2.svg"
                                 alt="AI Agents"
@@ -130,7 +149,10 @@ const CapilarityCardsLayout = () => {
                         </div>
 
                         {/* Card 5 - Observability (Bottom Left) */}
-                        <div className="flex justify-center items-center relative overflow-hidden col-span-1 lg:row-span-1 bg-gradient-to-tr from-[#FFB039] via-[#FFB039] to-[#FF6F00] rounded-2xl p-6 lg:p-10 hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0">
+                        <div 
+                            className="flex justify-center items-center relative overflow-hidden col-span-1 lg:row-span-1 bg-gradient-to-tr from-[#FFB039] via-[#FFB039] to-[#FF6F00] rounded-2xl p-6 lg:p-10 hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0"
+                            onClick={() => handleCardClick('observability-predictive-maintenance')}
+                        >
                             <img
                                 src="/images/insights/observability.svg"
                                 alt="Observability"
@@ -144,11 +166,14 @@ const CapilarityCardsLayout = () => {
                         </div>
 
                         {/* Card 6 - SOC Integration (Bottom Right) */}
-                        <div className="relative flex justify-center items-center col-span-1 lg:row-span-1 bg-black rounded-2xl text-white overflow-hidden hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0">
+                        <div 
+                            className="relative flex justify-center items-center col-span-1 lg:row-span-1 bg-black rounded-2xl text-white overflow-hidden hover:scale-101 focus:scale-101 transition-all duration-300 ease-out cursor-pointer min-h-[200px] lg:min-h-0"
+                            onClick={() => handleCardClick('soc-threat-intelligence')}
+                        >
                             {/* L-shaped lines at top left */}
                             <div className="absolute top-6 left-6 z-10">
-                                <div className="w-16 h-px bg-white"></div>
-                                <div className="w-px h-16 bg-white -mt-px"></div>
+                                <div className="w-16 h-0.5 bg-white"></div>
+                                <div className="w-0.5 h-16 bg-white -mt-0.5"></div>
                             </div>
 
                             {/* Glowing orange effect at bottom left */}

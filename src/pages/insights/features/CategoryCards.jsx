@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Reveal from '../../../components/Reveal';
 
 // Card data for each category
@@ -6,6 +7,7 @@ const categoryData = {
     "AI Development": [
         {
             id: 1,
+            blogPostId: "ai-agents-manufacturing",
             type: "BLOG",
             description: "AI AGENTS <br /> REDEFINING <br /> MANUFACTURING",
             image: "/images/insights/ai_dev_category1.svg",
@@ -16,6 +18,7 @@ const categoryData = {
         },
         {
             id: 2,
+            blogPostId: "healthcare-ai-agents",
             type: "ARTICLE",
             description: "Healthcare Services <br /> with Capilarity's <br /> AI-Powered Agents",
             image: "/images/insights/ai_dev_category2.svg",
@@ -28,6 +31,7 @@ const categoryData = {
     "Observability": [
         {
             id: 1,
+            blogPostId: "observability-predictive-maintenance",
             type: "BLOG",
             description: "How Observability <br /> Enables Predictive <br /> Maintenance in IT",
             image: "/images/insights/observability_category.svg",
@@ -40,6 +44,7 @@ const categoryData = {
     "DevOps": [
         {
             id: 1,
+            blogPostId: "cspm-compliance-security",
             type: "BLOG",
             description: "CSPM in Ensuring <br /> Compliance and <br /> Securing Configurations",
             image: "/images/insights/devops_category.svg",
@@ -52,6 +57,7 @@ const categoryData = {
     "Security": [
         {
             id: 1,
+            blogPostId: "soc-threat-intelligence",
             type: "BLOG",
             description: "Integrating SOC <br /> with Threat <br /> Intelligence",
             leftSideClassName: "bg-gradient-to-br from-[#3d3d3d] via-black to-orange-500/70",
@@ -63,8 +69,19 @@ const categoryData = {
 
 // Individual card component
 const CategoryCard = ({ card }) => {
+    const navigate = useNavigate();
+
+    const handleCardClick = () => {
+        if (card.blogPostId) {
+            navigate(`/insights/post/${card.blogPostId}`);
+        }
+    };
+
     return (
-        <div className="min-w-[300px] bg-gray-100 rounded-2xl overflow-hidden hover:scale-102 transition-all duration-300 ease-out cursor-pointer min-h-[200px] flex">
+        <div 
+            className="min-w-[300px] bg-gray-100 rounded-2xl overflow-hidden hover:scale-102 transition-all duration-300 ease-out cursor-pointer min-h-[200px] flex"
+            onClick={handleCardClick}
+        >
             {/* Left side - Dark blue background - 60% width if image exists, full width if no image */}
             <div className={`${card.leftSideClassName} ${card.image ? 'w-3/5' : 'w-full'} p-6 flex flex-col gap-5`}>
                 {/* Category Label */}

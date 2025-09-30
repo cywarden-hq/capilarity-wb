@@ -13,6 +13,7 @@ import Aboutus from './pages/aboutus/Aboutus'
 import AiDevelopment from './pages/services/ai/AiDevelopment'
 import Partner from './pages/partner/Partner'
 import Insights from './pages/insights/Insights'
+import BlogPost from './pages/insights/BlogPost'
 
 const Layout = () => {
   const location = useLocation();
@@ -42,7 +43,10 @@ function App() {
         <Route path="about-us" element={<Aboutus />} />
         <Route path="why-us" element={<WhyUs />} />
         <Route path="partner" element={<Partner />} />
-        <Route path="insights" element={<Insights />} />
+        <Route path="insights">
+          <Route index element={<Insights />} />
+          <Route path="post/:id" element={<BlogPost />} />
+        </Route>
         
         <Route path="services">
           <Route path="observability" element={<Observability />} />
