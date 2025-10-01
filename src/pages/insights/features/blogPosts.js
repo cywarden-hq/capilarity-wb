@@ -799,6 +799,8 @@ export const blogPosts = {
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Key Components of SOC-Threat Intelligence Integration</h2>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">To effectively integrate Threat Intelligence with SOC operations, organizations need to focus on the following components:</p>
                     
+                    <img src="/images/insights/soc_blog2.svg" class="py-6" alt="SOC-Threat Intelligence Integration" />
+
                     <div class="space-y-6">
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Automated Threat Feeds</h3>
