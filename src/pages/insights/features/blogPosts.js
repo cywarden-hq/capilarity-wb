@@ -1,6 +1,5 @@
 // Blog posts data with detailed content for each card
 export const blogPosts = {
-    // Security category
     "threat-detection-optimization": {
         id: "threat-detection-optimization",
         title: "Want to Optimize Threat Detection? 5 Patterns vs. 500 Rules",
@@ -49,9 +48,8 @@ export const blogPosts = {
 
                 <div class="prose prose-xl max-w-none">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Why Patterns Are Superior</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">Patterns offer a more flexible and scalable approach to threat detection. Instead of relying on static conditions, patterns focus on behavioral anomalies and trends:</p>
-                    
                     <img src="/images/insights/why_patterns_blog.svg" class="py-6" alt="Threat Detection" />
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">Patterns offer a more flexible and scalable approach to threat detection. Instead of relying on static conditions, patterns focus on behavioral anomalies and trends:</p>
 
                     <div class="space-y-6">
                         <div>
@@ -83,10 +81,9 @@ export const blogPosts = {
 
                 <div class="prose prose-xl max-w-none">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">The MITRE ATT&CK Framework: A Foundation for Patterns</h2>
+                    <img src="/images/insights/mitre_attck_blog.svg" class="py-6" alt="MITRE ATT&CK Framework" />
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">The MITRE ATT&CK Framework exemplifies the power of patterns. It outlines techniques and tactics used by adversaries and provides a structure for identifying behaviors across the attack lifecycle. Organizations leveraging this framework can align patterns to detect:</p>
                     
-                    <img src="/images/insights/mitre_attck_blog.svg" class="py-6" alt="MITRE ATT&CK Framework" />
-
                     <ul class="list-disc list-inside space-y-2 ml-4">
                         <li class="text-gray-700 leading-relaxed">Credential dumping attempts.</li>
                         <li class="text-gray-700 leading-relaxed">Lateral movements across systems.</li>
@@ -487,9 +484,8 @@ export const blogPosts = {
 
                 <div class="prose prose-xl max-w-none">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Understanding Observability in IT Infrastructures</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">Observability revolves around collecting, processing, and analyzing telemetry data such as logs, metrics, and traces. Unlike traditional monitoring, which typically focuses on predefined thresholds and reactive alerts, observability emphasizes understanding system behavior holistically. Key components include:</p>
-
                     <img src="/images/insights/understanding_observability_blog.svg" class="py-6" alt="Observability" />
+                    <p class="text-lg text-gray-700 leading-relaxed">Observability revolves around collecting, processing, and analyzing telemetry data such as logs, metrics, and traces. Unlike traditional monitoring, which typically focuses on predefined thresholds and reactive alerts, observability emphasizes understanding system behavior holistically. Key components include:</p>
 
                     <div class="py-5 space-y-2 px-8">
                        <h3 class="text-lg font-semibold text-gray-900 text-[#ff9d00]">1. Metrics:</h3>
@@ -797,9 +793,8 @@ export const blogPosts = {
 
                 <div class="prose prose-xl max-w-none">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Key Components of SOC-Threat Intelligence Integration</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">To effectively integrate Threat Intelligence with SOC operations, organizations need to focus on the following components:</p>
-                    
                     <img src="/images/insights/soc_blog2.svg" class="py-6" alt="SOC-Threat Intelligence Integration" />
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">To effectively integrate Threat Intelligence with SOC operations, organizations need to focus on the following components:</p>  
 
                     <div class="space-y-6">
                         <div>
@@ -892,7 +887,400 @@ export const blogPosts = {
                 </div>
             </div>
         `
-    }
+    },
+
+    "grc-integration-cyber-resilience": {
+        id: "grc-integration-cyber-resilience",
+        title: "How GRC Integration Strengthens Cyber Resilience",
+        type: "BLOG",
+        date: "14 April 2025",
+        tags: ["GRC", "Cyber Resilience", "Risk Management", "Compliance"],
+        heroImage: "/images/insights/grc_blog.svg",
+        excerpt: "Learn how integrating Governance, Risk Management, and Compliance (GRC) frameworks strengthens cyber resilience and moves organizations from awareness to actionable security.",
+        content: `
+            <div class="space-y-12">
+                <div class="prose prose-xl max-w-none">
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">In an era of persistent cyber threats, the transition from cybersecurity awareness to actionable resilience has become a critical imperative. Awareness alone, while foundational, cannot counteract the sophisticated tactics of today's threat actors. 73% of organization leaders agree that cyber and privacy regulations are effective in reducing their organizations' cyber risks in 2023.</p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed font-medium">Cyber resilience demands a cohesive strategy, one that embeds risk management and security protocols deeply into the organizational fabric. This is where the integration of Governance, Risk Management, and Compliance (GRC) frameworks becomes indispensable.</p>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Moving Beyond Awareness: The Role of GRC Integration</h2>
+                    <img src="/images/insights/grc_blog2.svg" class="py-6" alt="GRC Integration" />
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">Awareness campaigns play a vital role in educating employees about potential cyber threats, but they often fall short of ensuring robust defenses. Organizations must evolve from basic awareness to operationalizing cybersecurity within a GRC framework. This shift involves:</p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Centralized Risk Management</h3>
+                            <p class="text-gray-700 leading-relaxed">GRC systems enable organizations to centralize risk data, offering a unified view of vulnerabilities and threats.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Proactive Risk Mitigation</h3>
+                            <p class="text-gray-700 leading-relaxed">Beyond compliance checklists, GRC fosters a culture of continuous risk evaluation and proactive mitigation.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Real-Time Monitoring</h3>
+                            <p class="text-gray-700 leading-relaxed">Integration ensures that risk assessments and compliance audits are dynamic, adapting to emerging threats in real time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">GRC as the Backbone of Cyber Resilience</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">To achieve true resilience, cybersecurity must be tightly woven into GRC processes. This integration supports both governance—by establishing policies and standards—and operational risk management—by implementing those policies effectively. The benefits include:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Policy Enforcement</h3>
+                            <p class="text-gray-700 leading-relaxed">Automated workflows ensure that cybersecurity policies are consistently applied across the organization.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Enhanced Decision-Making</h3>
+                            <p class="text-gray-700 leading-relaxed">By consolidating data into actionable insights, GRC systems empower leadership to make informed, timely decisions.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Scalable Compliance</h3>
+                            <p class="text-gray-700 leading-relaxed">As regulations evolve, GRC tools provide the flexibility to update compliance measures without disrupting operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Tackling Third-Party Risks</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">Third-party vendors and suppliers represent a significant cybersecurity challenge. Supply chain vulnerabilities are often exploited by attackers, amplifying risks across interconnected networks. GRC frameworks address these challenges by:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Automating Vendor Risk Assessments</h3>
+                            <p class="text-gray-700 leading-relaxed">Streamlined processes evaluate third-party compliance with cybersecurity standards.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Continuous Monitoring</h3>
+                            <p class="text-gray-700 leading-relaxed">GRC tools enable ongoing oversight of vendor activities, ensuring alignment with organizational security protocols.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Taxonomy Frameworks</h3>
+                            <p class="text-gray-700 leading-relaxed">A structured approach categorizes risks associated with third-party interactions, providing clarity and actionable steps to mitigate vulnerabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Integrating IT and GRC for Seamless Cybersecurity</h2>
+                    <img src="/images/insights/grc_blog3.svg" class="py-6" alt="GRC Integration" />
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">The convergence of IT systems with GRC frameworks is critical for building a resilient cybersecurity posture. IT infrastructure provides the tools and data required for effective GRC implementation. Key areas of integration include:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Automation of Security Controls</h3>
+                            <p class="text-gray-700 leading-relaxed">IT systems enforce governance policies through automated mechanisms, reducing human error.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Real-Time Data Feeds</h3>
+                            <p class="text-gray-700 leading-relaxed">Continuous data integration from IT environments allows GRC platforms to provide up-to-date risk insights.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Incident Response Coordination</h3>
+                            <p class="text-gray-700 leading-relaxed">Integrated systems ensure that detection and response processes are aligned with governance standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Building Organizational Resilience</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">Cyber resilience extends beyond technical defenses to encompass organizational processes and cultural shifts. A unified GRC approach enables organizations to:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Embed Security into Business Processes</h3>
+                            <p class="text-gray-700 leading-relaxed">By aligning cybersecurity with business objectives, organizations can prioritize investments and actions based on strategic importance.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Foster a Culture of Accountability</h3>
+                            <p class="text-gray-700 leading-relaxed">Clear governance structures ensure that all employees understand their roles in maintaining security.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Prepare for Adverse Events</h3>
+                            <p class="text-gray-700 leading-relaxed">Business Continuity Management (BCM), as part of GRC, ensures readiness for potential disruptions through regular impact analyses and recovery planning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">How Capilarity Enhances GRC Integration</h2>
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">As a leading multicloud solutions provider, Capilarity offers tailored GRC integration services that empower organizations to strengthen their cyber resilience. Capilarity's expertise spans across sectors such as fintech, BFSI, healthcare, and e-commerce, providing solutions that align with industry-specific compliance and security requirements.</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Cloud-Based GRC Platforms</h3>
+                            <p class="text-gray-700 leading-relaxed">Capilarity enables centralized risk and compliance management across multicloud environments, ensuring seamless oversight.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Automation and Real-Time Monitoring</h3>
+                            <p class="text-gray-700 leading-relaxed">By leveraging advanced tools, Capilarity automates compliance workflows and provides real-time risk insights, reducing response times to emerging threats.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Third-Party Risk Management</h3>
+                            <p class="text-gray-700 leading-relaxed">Capilarity's solutions streamline vendor assessments and continuous monitoring, ensuring that external partnerships do not compromise internal security.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Customizable Frameworks</h3>
+                            <p class="text-gray-700 leading-relaxed">Recognizing the unique challenges of each organization, Capilarity designs GRC solutions tailored to specific business needs and regulatory landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">GRC Integration for Cyber Resilience</h2>
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl">
+                        <p class="text-lg text-gray-700 leading-relaxed font-medium">Cyber resilience is not a destination but an ongoing journey that requires a comprehensive, integrated approach. By embedding cybersecurity within a robust GRC framework, organizations can move from awareness to action, ensuring proactive risk management and sustained resilience in the face of evolving threats.</p>
+                    </div>
+                </div>
+            </div>
+        `
+    },
+
+    "threat-modeling-frameworks": {
+        id: "threat-modeling-frameworks",
+        title: "Threat Modeling Frameworks and Methodologies: A Guide",
+        type: "BLOG",
+        category: "Security",
+        date: "10 April 2025",
+        tags: ["Threat Modeling", "Security Frameworks", "Risk Assessment", "Cybersecurity"],
+        heroImage: "/images/insights/threat_modeling_blog.svg",
+        excerpt: "Explore comprehensive threat modeling frameworks and methodologies including STRIDE, PASTA, ATT&CK, and LINDDUN to strengthen your security posture and risk management.",
+        content: `
+            <div class="space-y-12">
+                <div class="prose prose-xl max-w-none">
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">In an age where cybersecurity threats evolve daily, threat modeling has become an essential practice for identifying, assessing, and mitigating risks in systems and applications. 38% of SaaS applications are targeted by hackers and cloud-based email servers are attacked as well.</p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed font-medium">It involves a structured approach to anticipate potential threats, vulnerabilities, and mitigation strategies, ensuring robust security posture and risk management. This article delves into prominent threat modeling frameworks and methodologies, exploring their relevance, technical foundations, and practical applications.</p>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Key Threat Modeling Frameworks</h2>
+
+                    <img src="/images/insights/threat_modeling_blog2.svg" class="py-6" alt="Threat Modeling Frameworks" />
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">1. STRIDE</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">Developed by Microsoft, STRIDE categorizes threats into six types: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege. Each category aligns with specific security properties such as authentication, integrity, and availability.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Application:</h4>
+                                    <p class="text-gray-700 leading-relaxed">STRIDE is particularly effective in application-level threat modeling.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Process:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Analysts identify components in the system architecture and evaluate them against each STRIDE category, systematically mapping threats and mitigation strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">2. PASTA (Process for Attack Simulation and Threat Analysis)</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">PASTA is a risk-centric framework that emphasizes aligning technical vulnerabilities with business objectives.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Stages:</h4>
+                                    <p class="text-gray-700 leading-relaxed">The methodology includes seven stages: objectives definition, technical scope, application decomposition, threat analysis, vulnerability and weakness assessment, attack modeling, and mitigation strategy development.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Advantage:</h4>
+                                    <p class="text-gray-700 leading-relaxed">By focusing on business context, PASTA helps prioritize threats based on their potential impact on organizational goals.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">3. ATT&CK Framework</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">The MITRE ATT&CK framework catalogs tactics, techniques, and procedures (TTPs) employed by adversaries during cyber attacks.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Relevance:</h4>
+                                    <p class="text-gray-700 leading-relaxed">It provides a threat-centric view, making it suitable for incident response, detection engineering, and red teaming exercises.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Integration:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Security teams integrate ATT&CK with tools like SIEMs, EDR solutions, and threat intelligence platforms for proactive defenses.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">4. LINDDUN</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">Focused on privacy threat modeling, LINDDUN categorizes threats into Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Specialization:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Designed for systems that handle sensitive personal information, making it ideal for compliance-driven environments such as GDPR and HIPAA.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Process:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Analysts map data flows to privacy threats and implement privacy-enhancing technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Prominent Methodologies in Threat Modeling</h2>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">1. Attack Tree Analysis</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">An attack tree represents potential attack paths in a hierarchical structure. The root node is the attacker's ultimate goal, while leaf nodes depict individual steps.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Use Case:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Common in evaluating system vulnerabilities and developing defense strategies.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Tools:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Software like CAIRIS and SeaMonster supports automated attack tree generation and analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">2. Data Flow Diagrams (DFDs)</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">DFDs are a cornerstone of many threat modeling exercises. They visually represent data flows, processes, storage, and external entities.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Integration:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Often used with frameworks like STRIDE or LINDDUN to identify vulnerabilities at the system design level.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Value:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Provides a clear overview of potential attack surfaces.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-[#ff9d00]">3. Kill Chain Methodology</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed mb-4">Originating from military strategies, the Cyber Kill Chain maps stages of a cyber attack: reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Focus:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Helps in breaking down complex attacks into manageable phases.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2 text-[#ff9d00]">Impact:</h4>
+                                    <p class="text-gray-700 leading-relaxed">Enhances incident detection and response by correlating actions to the kill chain stages.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Challenges in Implementing Threat Modeling</h2>
+                    <img src="/images/insights/threat_modeling_blog3.svg" class="py-6" alt="Threat Modeling Frameworks" />
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">While threat modeling frameworks and methodologies offer substantial benefits, they come with challenges:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Complexity</h3>
+                            <p class="text-gray-700 leading-relaxed">Modern multi-cloud and microservices architectures complicate system analysis.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Scalability</h3>
+                            <p class="text-gray-700 leading-relaxed">Scaling threat modeling for enterprise environments requires extensive automation and expertise.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Integration</h3>
+                            <p class="text-gray-700 leading-relaxed">Integrating threat modeling with CI/CD pipelines and DevSecOps workflows is technically challenging.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">Knowledge Gap</h3>
+                            <p class="text-gray-700 leading-relaxed">Effective threat modeling demands a deep understanding of attack vectors, system architecture, and threat intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">How Capilarity Helps Overcome Threat Modeling Challenges</h2>
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl mb-8">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Capilarity offers tailored solutions for multi-cloud environments, ensuring seamless implementation of threat modeling frameworks. With expertise in SOC, VAPT, DevSecOps, CSPM, and Observability, Capilarity ensures:</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">1. Framework Integration</h3>
+                            <p class="text-gray-700 leading-relaxed">Capilarity integrates frameworks like STRIDE, ATT&CK, and PASTA with your existing security infrastructure, automating workflows to streamline threat identification.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">2. Multi-Cloud Security</h3>
+                            <p class="text-gray-700 leading-relaxed">With in-house certified experts, Capilarity addresses the complexities of hybrid and multi-cloud environments, securing diverse architectures.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">3. DevSecOps Enablement</h3>
+                            <p class="text-gray-700 leading-relaxed">Capilarity incorporates threat modeling into CI/CD pipelines, ensuring security is a continuous process.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">4. Actionable Insights</h3>
+                            <p class="text-gray-700 leading-relaxed">Leveraging advanced tools and threat intelligence, Capilarity provides actionable insights to prioritize and mitigate high-impact threats.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-[#ff9d00]">5. Compliance Support</h3>
+                            <p class="text-gray-700 leading-relaxed">By adopting privacy-focused frameworks like LINDDUN, Capilarity helps organizations achieve regulatory compliance efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prose prose-xl max-w-none">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Threat Modeling for Cloud and Hybrid Environments</h2>
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 p-8 rounded-xl">
+                        <p class="text-lg text-gray-700 leading-relaxed font-medium">Threat modeling is an indispensable practice for organizations aiming to stay ahead of cyber adversaries. By leveraging structured frameworks and methodologies, businesses can anticipate threats and strengthen their security posture. However, implementing these models effectively requires a combination of technical expertise, advanced tools, and organizational alignment.</p>
+                    </div>
+                </div>
+            </div>
+        `
+    },
 };
 
 // Helper function to get blog post by ID

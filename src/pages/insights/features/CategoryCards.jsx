@@ -64,6 +64,15 @@ const categoryData = {
             textColor: "text-white",
             categoryColor: "bg-[#ff9d00] text-white"
         },
+        {
+            id: 2,
+            blogPostId: "threat-detection-optimization",
+            type: "BLOG",
+            description: "Want to Optimize Threat <br /> Detection? 5 Patterns <br /> vs. 500 Rules",
+            leftSideClassName: "bg-gradient-to-br from-[#0b2d4d] via-[#0b2d4d] to-blue-700 ",
+            textColor: "text-white",
+            categoryColor: "bg-[#ff9d00] text-white"
+        }
     ]
 };
 
@@ -79,7 +88,7 @@ const CategoryCard = ({ card }) => {
 
     return (
         <div 
-            className="min-w-[300px] bg-gray-100 rounded-2xl overflow-hidden hover:scale-102 transition-all duration-300 ease-out cursor-pointer min-h-[200px] flex"
+            className="flex min-w-[300px] min-h-[200px] bg-gray-100 rounded-2xl overflow-hidden hover:scale-102 transition-all duration-300 ease-out cursor-pointer"
             onClick={handleCardClick}
         >
             {/* Left side - Dark blue background - 60% width if image exists, full width if no image */}
@@ -121,7 +130,7 @@ const CategoryCards = ({ activeFilter }) => {
     return (
         <div className="max-w-6xl px-4 md:px-8 lg:px-20 mx-auto">
             <Reveal animation="slideUp" duration="slow" delay={200}>
-                <div className="flex flex-wrap gap-10">
+                <div className="flex flex-wrap justify-center gap-10">
                     {cards.map((card) => (
                         <CategoryCard key={card.id} card={card} />
                     ))}
