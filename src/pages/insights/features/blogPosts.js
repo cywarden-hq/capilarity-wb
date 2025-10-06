@@ -83,7 +83,7 @@ export const blogPosts = {
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">The MITRE ATT&CK Framework: A Foundation for Patterns</h2>
                     <img src="/images/insights/mitre_attck_blog.svg" class="py-6" alt="MITRE ATT&CK Framework" />
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">The MITRE ATT&CK Framework exemplifies the power of patterns. It outlines techniques and tactics used by adversaries and provides a structure for identifying behaviors across the attack lifecycle. Organizations leveraging this framework can align patterns to detect:</p>
-                    
+
                     <ul class="list-disc list-inside space-y-2 ml-4">
                         <li class="text-gray-700 leading-relaxed">Credential dumping attempts.</li>
                         <li class="text-gray-700 leading-relaxed">Lateral movements across systems.</li>
@@ -794,7 +794,7 @@ export const blogPosts = {
                 <div class="prose prose-xl max-w-none">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-[#ff9d00] pl-4">Key Components of SOC-Threat Intelligence Integration</h2>
                     <img src="/images/insights/soc_blog2.svg" class="py-6" alt="SOC-Threat Intelligence Integration" />
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">To effectively integrate Threat Intelligence with SOC operations, organizations need to focus on the following components:</p>  
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">To effectively integrate Threat Intelligence with SOC operations, organizations need to focus on the following components:</p>
 
                     <div class="space-y-6">
                         <div>
